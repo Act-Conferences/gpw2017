@@ -1,0 +1,50 @@
+[% WRAPPER ui title = global.conference.name %]
+
+    <style type="text/css">#basicMap { width: 600px; height: 500px; margin: 0; }</style>
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+
+    <h2><t><de>Veranstaltungsort</de><en>Venue</en></t></h2>
+
+    <div id="basicMap"></div>
+    <p><t>
+      <de>
+        Der Deutsche Perl-Workshop 2016 findet im <strong>DATEV IT-Campus</strong>,
+        Fürther Str. 111, 90429 Nürnberg nahe dem Zentrum von Nürnberg statt.<br />
+        Die Anreise kann sehr gut mit öffentlichen Verkehrsmitteln erfolgen.
+        Die U-Bahn-Haltestelle (U 1) <strong>Maximilianstraße</strong> ist nur 300 Meter entfernt.
+        Gehe stadteinwärts.
+      </de>
+      <en>
+        The German Perl Workshop 2016 will take place in <strong>DATEV IT-Campus</strong>,
+        Fürther Str. 111, 90429 Nürnberg, near the centre of Nuremberg.<br />
+        We have an excellent public transport system in Nuremberg and the next
+        underground station (U 1) <strong>Maximilianstraße</strong> is only 300 meters away.
+        Work into direction town centre.
+      </en>
+    </t></p>
+    <p>
+        <a href="hotels.html">
+            →
+            <t>
+                <de>Nahverkehr und Parken am Veranstaltungsort</de>
+                <en>Public transport and parking at venue</en>
+            </t>
+        </a>
+    </p>
+
+    <script type="text/javascript">
+      function init() {
+        map = new OpenLayers.Map("basicMap");
+        var mapnik = new OpenLayers.Layer.OSM();
+        map.addLayer(mapnik);
+        map.setCenter(new OpenLayers.LonLat(11.046511,49.453176) // Center of the map
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            new OpenLayers.Projection("EPSG:900913") // to Spherical Mercator Projection
+          ), 16 // Zoom level
+        );
+      }
+      init();
+    </script>
+
+[% END %]
