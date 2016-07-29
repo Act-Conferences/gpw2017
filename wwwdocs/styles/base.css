@@ -252,7 +252,9 @@ fast-weiss #ddd
 /*gradient löschen*/
 #header .navbar-inverse.gpw,
 #header .navbar-inverse.gpw .navbar-nav>.active>a, 
-#header .navbar-inverse.gpw .navbar-nav>.open>a {
+#header .navbar-inverse.gpw .navbar-nav>.open>a,
+#header .dropdown-menu>li>a:focus, 
+#header .dropdown-menu>li>a:hover {
     background-image:none;
     background:none;  
     filter: ;/*reset*/
@@ -292,6 +294,10 @@ fast-weiss #ddd
     color: #232343;/*gpwbluemediumdark*/
     background-color: #ddd;/*fast-weiss*/
 }
+#header .navbar-inverse.gpw .navbar-nav .open .dropdown-menu {
+  background-color: #333366;/*gpwblue*//*fallback*/
+  background: rgba(51, 51, 102, 0.98);/*gpwblue - transparent*/  
+}
 /* caret */
 #header .navbar-inverse.gpw .navbar-nav > .dropdown > a .caret {
     border-top-color: #fff;/*weiss*/
@@ -305,8 +311,8 @@ fast-weiss #ddd
 #header .navbar-inverse.gpw .navbar-nav > .open > a .caret, 
 #header .navbar-inverse.gpw .navbar-nav > .open > a:hover .caret, 
 #header .navbar-inverse.gpw .navbar-nav > .open > a:focus .caret {
-    border-top-color: red;
-    border-bottom-color: red;
+    border-top-color: #121221;/*gpwbluedark*/ 
+    border-bottom-color: #121221;/*gpwbluedark*/ 
 }
 /* mobile version */
 #header .navbar-inverse.gpw .navbar-toggle {
@@ -319,6 +325,9 @@ fast-weiss #ddd
 #header .navbar-inverse.gpw .navbar-toggle .icon-bar {
     background-color: #ddd;/*fast-weiss*/
 }
+
+
+
 @media (max-width: 767px) {
     #header .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a {
         color: green;
