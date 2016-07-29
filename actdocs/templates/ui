@@ -7,7 +7,7 @@
     <title>[% global.conference.name %]</title>
     <meta name="description"      content="<t><de>Der Deutsche Perl-Workshop ist eine jährlich in Deutschland stattfindende Konferenz von und für Entwickler der Programmiersprache Perl.</de><en>The German Perl Workshop is a conference about the Perl Programming Language. It is organized by Perl developers.</en></t>">
     <meta name="keywords"         content="Perl,Workshop,<t><de>Konferenz,Deutschland,Entwickler,Programmiersprache</de><en>Conference,Germany,Developer,Programming language</en></t>">
-    <meta name="application-name" content="ACT GPW2016">
+    <meta name="application-name" content="ACT GPW2017">
     <meta name="author"           content="Erlangen.pm, Perleone">
     <meta name="generator"        content="act.yapc.eu">
   	<!--startncm-->
@@ -37,7 +37,7 @@
         	<form id="archiv_form" action="#">  
         		<fieldset class="form-group" style="display: inline-block;float: right;">
         			<label for="archiv"><t><de>Workshop</de><en>Workshop</en></t>:</label>	  
-        			<select class="selectpicker form-control" id="archiv" style="display: inline-block;width: auto;">
+        			<select class="selectpicker form-control" id="archiv"><!--style="display: inline-block;width: auto;"-->
         			  <option value="index.html" selected="selected">2017</option>
         			  <option value="http://act.yapc.eu/gpw2016/">2016</option>
         			  <option value="http://act.yapc.eu/gpw2015/">2015</option>
@@ -99,7 +99,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><span class=""><t><de>gpw</de><en>gpw</en></t></span><span><t><de>Deutscher Perl-Workshop</de><en>German Perl Workshop</en></t></span><span class="year">2017</span></a>
+                <a class="navbar-brand" href="#"><span class="sitetitle"><t><de>Deutscher Perl-Workshop</de><en>German Perl Workshop</en></t></span><span class="year"> 2017</span></a>
               </div>
               <div class="collapse navbar-collapse" id="gpwNavbar">
                 <ul class="nav navbar-nav">
@@ -124,12 +124,12 @@
                       <li><a href="#"><t><de>Presse</de><en>Press</en></t></a></li>
                     </ul>
                   </li>
-                  <li><a href="#"><t><de>News</de><en</en>News</t></a></li>
+                  <li><a href="#"><t><de>News</de><en>News</en></t></a></li>
                   <li><a href="#"><t><de>Unterstützen/Sponsoren</de><en>Sponsoring/Sponsors</en></t></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> <t><de>Registrieren</de><en><t><de>Sign Up</en></a></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> <t><de>Login</de><en>Log in</en></a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> <t><de>Registrieren</de><en>Sign Up</en></t></a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> <t><de>Login</de><en>Log in</en></t></a></li>
                 </ul>
               </div>
             </div>
@@ -138,7 +138,7 @@
 
 
 
-  
+          <!--
           <div class="navbar-wrapper mod_backboneit_navigation_menu bootstrap visible-xsx visible-mdx visible-lgx visible-smx hidden ncm">
               <div class="container">
             
@@ -196,7 +196,7 @@
                 </div>
               </div>
             </div>
-           
+           -->
 
       	</div>
       </div>	  
