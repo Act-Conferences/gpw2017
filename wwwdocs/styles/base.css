@@ -243,71 +243,88 @@ ncm: re-color inverse menu
 src:http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3;
 */
 /* navbar */
-.navbar-inverse.gpw {
-    background-color: #F8F8F8;
-    border-color: #E7E7E7;
+/*
+gpwblue #333366
+gpwbluemediumdark #232343
+gpwbluedark #121221
+fast-weiss #ddd
+*/
+/*gradient löschen*/
+#header .navbar-inverse.gpw,
+#header .navbar-inverse.gpw .navbar-nav>.active>a, 
+#header .navbar-inverse.gpw .navbar-nav>.open>a {
+    background-image:none;
+    background:none;  
+    filter: ;/*reset*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)" !important;
+    background-repeat:no-repeat;
+}
+#header .navbar-inverse.gpw {
+    background-color: #333366;/*gpwblue*/
+    border-color: #232343;/*gpwbluemediumdark*/
 }
 /* title */
-.navbar-inverse.gpw .navbar-brand {
-    color: #777;
+#header .navbar-inverse.gpw .navbar-brand,
+#header .navbar-inverse.gpw .navbar-brand {
+    color: #fff;/*weiss*/
 }
-.navbar-inverse.gpw .navbar-brand:hover,
-.navbar-inverse.gpw .navbar-brand:focus {
-    color: #5E5E5E;
+#header .navbar-inverse.gpw .navbar-brand:hover,
+#header .navbar-inverse.gpw .navbar-brand:focus {
+    color: #ddd;/*fast-weiss*/
 }
 /* link */
-.navbar-inverse.gpw .navbar-nav > li > a {
-    color: #777;
+#header .navbar-inverse.gpw .navbar-nav > li > a {
+    color: #fff;/*weiss*/
 }
-.navbar-inverse.gpw .navbar-nav > li > a:hover,
-.navbar-inverse.gpw .navbar-nav > li > a:focus {
-    color: #333;
+#header .navbar-inverse.gpw .navbar-nav > li > a:hover,
+#header .navbar-inverse.gpw .navbar-nav > li > a:focus {
+    color: #ddd;/*fast-weiss*/
 }
-.navbar-inverse.gpw .navbar-nav > .active > a, 
-.navbar-inverse.gpw .navbar-nav > .active > a:hover, 
-.navbar-inverse.gpw .navbar-nav > .active > a:focus {
-    color: #555;
-    background-color: #E7E7E7;
+#header .navbar-inverse.gpw .navbar-nav > .active > a, 
+#header .navbar-inverse.gpw .navbar-nav > .active > a:hover, 
+#header .navbar-inverse.gpw .navbar-nav > .active > a:focus {
+    color: #fff;/*weiss #555;*/
+    background-color: #121221;/*gpwbluedark*/ 
 }
-.navbar-inverse.gpw .navbar-nav > .open > a, 
-.navbar-inverse.gpw .navbar-nav > .open > a:hover, 
-.navbar-inverse.gpw .navbar-nav > .open > a:focus {
-    color: #555;
-    background-color: #D5D5D5;
+#header .navbar-inverse.gpw .navbar-nav > .open > a, 
+#header .navbar-inverse.gpw .navbar-nav > .open > a:hover, 
+#header .navbar-inverse.gpw .navbar-nav > .open > a:focus {
+    color: #232343;/*gpwbluemediumdark*/
+    background-color: #ddd;/*fast-weiss*/
 }
 /* caret */
-.navbar-inverse.gpw .navbar-nav > .dropdown > a .caret {
-    border-top-color: #777;
-    border-bottom-color: #777;
+#header .navbar-inverse.gpw .navbar-nav > .dropdown > a .caret {
+    border-top-color: #fff;/*weiss*/
+    border-bottom-color: #fff;/*weiss*/
 }
-.navbar-inverse.gpw .navbar-nav > .dropdown > a:hover .caret,
-.navbar-inverse.gpw .navbar-nav > .dropdown > a:focus .caret {
-    border-top-color: #333;
-    border-bottom-color: #333;
+#header .navbar-inverse.gpw .navbar-nav > .dropdown > a:hover .caret,
+#header .navbar-inverse.gpw .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #ddd;/*fast-weiss*/
+    border-bottom-color: #ddd;/*fast-weiss*/
 }
-.navbar-inverse.gpw .navbar-nav > .open > a .caret, 
-.navbar-inverse.gpw .navbar-nav > .open > a:hover .caret, 
-.navbar-inverse.gpw .navbar-nav > .open > a:focus .caret {
-    border-top-color: #555;
-    border-bottom-color: #555;
+#header .navbar-inverse.gpw .navbar-nav > .open > a .caret, 
+#header .navbar-inverse.gpw .navbar-nav > .open > a:hover .caret, 
+#header .navbar-inverse.gpw .navbar-nav > .open > a:focus .caret {
+    border-top-color: red;
+    border-bottom-color: red;
 }
 /* mobile version */
-.navbar-inverse.gpw .navbar-toggle {
-    border-color: #DDD;
+#header .navbar-inverse.gpw .navbar-toggle {
+    border-color: #ddd;/*fast-weiss*/
 }
-.navbar-inverse.gpw .navbar-toggle:hover,
-.navbar-inverse.gpw .navbar-toggle:focus {
-    background-color: #DDD;
+#header .navbar-inverse.gpw .navbar-toggle:hover,
+#header .navbar-inverse.gpw .navbar-toggle:focus {
+    background-color: #ddd;/*fast-weiss*/
 }
-.navbar-inverse.gpw .navbar-toggle .icon-bar {
-    background-color: #CCC;
+#header .navbar-inverse.gpw .navbar-toggle .icon-bar {
+    background-color: #ddd;/*fast-weiss*/
 }
 @media (max-width: 767px) {
-    .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a {
-        color: #777;
+    #header .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a {
+        color: green;
     }
-    .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #333;
+    #header .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a:hover,
+    #header .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: yellow;
     }
 }
