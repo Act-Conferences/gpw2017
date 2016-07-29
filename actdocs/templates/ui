@@ -35,7 +35,7 @@
       <div class="elemWrapper hidden ncm">
         <div class="container">	
         	<form id="archiv_form" action="#">  
-        		<fieldset class="form-group" style="display: inline-block;float: right;">
+        		<fieldset class="form-group"><!--style="display: inline-block;float: right;"-->
         			<label for="archiv"><t><de>Workshop</de><en>Workshop</en></t>:</label>	  
         			<select class="selectpicker form-control" id="archiv"><!--style="display: inline-block;width: auto;"-->
         			  <option value="index.html" selected="selected">2017</option>
