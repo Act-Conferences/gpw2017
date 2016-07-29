@@ -90,7 +90,7 @@
       	<div class="elemWrapper">
 
 
-          <nav class="navbar navbar-inverse hidden ncm">
+          <nav class="navbar navbar-inverse navbar-fixed-top hidden ncm">
             <div class="container-fluid">
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gpwNavbar">
