@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="[% global.request.language %]">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -10,53 +10,227 @@
     <meta name="application-name" content="ACT GPW2016">
     <meta name="author"           content="Erlangen.pm, Perleone">
     <meta name="generator"        content="act.yapc.eu">
-    <script type="text/javascript" src="scripts/modernizr.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+  	<!--startncm-->
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+  	<!-- Latest compiled and minified CSS -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  	<!-- Optional theme -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  	<!--endncm-->	
+    <script type="text/javascript" src="scripts/modernizr.js"></script>	
+    <!--startncm-->
+  	<!--removed because included in bootstrap <link rel="stylesheet" type="text/css" href="styles/normalize.css">-->
+  	<!--endncm-->
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/oldcolors.css">
   </head>
+
   <body>
     <header id="header">
       <div id="logo"></div>
       <h1 id="site_name"><a href="index.html">[% global.conference.name %]</a></h1>
-      <p id="otherworkshops">
-        <a href="http://act.yapc.eu/gpw2016/">2016</a>
-        <a href="http://act.yapc.eu/gpw2015/">2015</a>
-        <a href="http://act.yapc.eu/gpw2014/">2014</a>
-        <a href="http://act.yapc.eu/gpw2013/">2013</a>
-        <a href="http://conferences.yapceurope.org/gpw2012/">2012</a>
-        <a href="http://conferences.yapceurope.org/gpw2011/">2011</a>
-        <a href="http://conferences.yapceurope.org/gpw2010/">2010</a>
-        <a href="http://www.perl-workshop.de/de/2009/">2009</a>
-        <a href="http://www.perl-workshop.de/de/2008/">2008</a>
-        <a href="http://www.perl-workshop.de/de/2007/">2007</a>
-        <a href="http://www.perl-workshop.de/de/2006/">2006</a>
-        <a href="http://www.perl-workshop.de/de/2005/">2005</a>
-        <a href="http://www.perl-workshop.de/de/2004/">2004</a>
-        <a href="http://www.perl-workshop.de/de/2003/">2003</a>
-        <a href="http://www.perl-workshop.de/de/2002/">2002</a>
-        <a href="http://www.perl-workshop.de/de/2001/">2001</a>
-        <a href="http://www.perl-workshop.de/de/2000/">2000</a>
-        <a href="http://www.perl-workshop.de/de/1999/">1999</a>
-      </p>
-      <nav id="topnav">
-        <ul class="topnav">
-          <li><a href="index.html"><t><de>Startseite</de><en>Home</en></t></a></li>
-          <li><a href="news">News</a></li>
-          <li><a href="venue.html"><t><de>Veranstaltungsort</de><en>Venue</en></t></a></li>
-          <li><a href="stats"><t><de>Teilnehmer</de><en>Attendees</en></t></a></li>
-          <li><a href="schedule"><t><de>Programm</de><en>Schedule</en></t></a></li>
-          <li><a href="sponsoring.html"><t><de>Unterstützen</de><en>Sponsoring</en></t></a></li>
-          <li><a href="sponsors.html"><t><de>Sponsoren</de><en>Sponsors</en></t></a></li>
-          <li><a href="status.html">Status</a></li>
-          <li><a href="press.html"><t><de>Presse</de><en>Press</en></t></a></li>
-        </ul>
-        <div id="topnav_clearing"></div>
-      </nav>
+
+      <!--ncmstart--><!--id:otherworkshops-->
+      <div class="elemWrapper hidden ncm">
+        <div class="container">	
+        	<form id="archiv_form" action="#">  
+        		<fieldset class="form-group" style="display: inline-block;float: right;">
+        			<label for="archiv"><t><de>Workshop</de><en>Workshop</en></t>:</label>	  
+        			<select class="selectpicker form-control" id="archiv" style="display: inline-block;width: auto;">
+        			  <option value="index.html" selected="selected">2017</option>
+        			  <option value="http://act.yapc.eu/gpw2016/">2016</option>
+        			  <option value="http://act.yapc.eu/gpw2015/">2015</option>
+        			  <option value="http://act.yapc.eu/gpw2014/">2014</option>
+        			  <option value="http://act.yapc.eu/gpw2013/">2013</option>
+        			  <option value="http://conferences.yapceurope.org/gpw2012/">2012</option>
+        			  <option value="http://conferences.yapceurope.org/gpw2011/">2011</option>
+        			  <option value="http://conferences.yapceurope.org/gpw2010/">2010</option>
+        			  <option value="http://www.perl-workshop.de/de/2009/">2009</option>
+        			  <option value="http://www.perl-workshop.de/de/2008/">2008</option>
+        			  <option value="http://www.perl-workshop.de/de/2007/">2007</option>
+        			  <option value="http://www.perl-workshop.de/de/2006/">2006</option>
+        			  <option value="http://www.perl-workshop.de/de/2005/">2005</option>
+        			  <option value="http://www.perl-workshop.de/de/2004/">2004</option>
+        			  <option value="http://www.perl-workshop.de/de/2003/">2003</option>
+        			  <option value="http://www.perl-workshop.de/de/2002/">2002</option>
+        			  <option value="http://www.perl-workshop.de/de/2001/">2001</option>
+        			  <option value="http://www.perl-workshop.de/de/2000/">2000</option>
+        			  <option value="http://www.perl-workshop.de/de/1999/">1999</option>
+        			</select>
+        		</fieldset>
+        	</form>
+        </div>
+      </div>
+      <!--ncmende-->	  
+      <!--	   
+        <p id="otherworkshops">
+          <a href="http://act.yapc.eu/gpw2016/">2016</a>
+          <a href="http://act.yapc.eu/gpw2015/">2015</a>
+          <a href="http://act.yapc.eu/gpw2014/">2014</a>
+          <a href="http://act.yapc.eu/gpw2013/">2013</a>
+          <a href="http://conferences.yapceurope.org/gpw2012/">2012</a>
+          <a href="http://conferences.yapceurope.org/gpw2011/">2011</a>
+          <a href="http://conferences.yapceurope.org/gpw2010/">2010</a>
+          <a href="http://www.perl-workshop.de/de/2009/">2009</a>
+          <a href="http://www.perl-workshop.de/de/2008/">2008</a>
+          <a href="http://www.perl-workshop.de/de/2007/">2007</a>
+          <a href="http://www.perl-workshop.de/de/2006/">2006</a>
+          <a href="http://www.perl-workshop.de/de/2005/">2005</a>
+          <a href="http://www.perl-workshop.de/de/2004/">2004</a>
+          <a href="http://www.perl-workshop.de/de/2003/">2003</a>
+          <a href="http://www.perl-workshop.de/de/2002/">2002</a>
+          <a href="http://www.perl-workshop.de/de/2001/">2001</a>
+          <a href="http://www.perl-workshop.de/de/2000/">2000</a>
+          <a href="http://www.perl-workshop.de/de/1999/">1999</a>
+        </p> 
+      -->	  
+      <!--ncmstart-->	  
+      <div id="menustorage" class="hidden ncm">
+      	<div class="elemWrapper">
+
+
+          <nav class="navbar navbar-inverse navbar-fixed-top hidden ncm">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gpwNavbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class=""><t><de>gpw</de><en>gpw</en></t></span><span><t><de>Deutscher Perl-Workshop</de><en>German Perl Workshop</en></t></span><span class="year">2017</span></a>
+              </div>
+              <div class="collapse navbar-collapse" id="gpwNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#"><t><de>Startseite</de><en>Home</en></t></a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><t><de>Workshop</de><en>Workshop</en></t> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#"><t><de>Veranstaltungsort</de><en>Venue</en></t></a></li>
+                      <li><a href="#"><t><de>Teilnehmer</de><en>Attendees</en></t></a></li>
+                      <li><a href="#"><t><de>Ticket-Preise</de><en>Ticket Prices</en></t></a></li>
+                      <li><a href="#"><t><de>Vorschläge für Vorträge</de><en>Tak Suggestions</en></t></a></li>
+                      <li><a href="#"><t><de>Vorträge - Favorite Talks</de><en>Presentations - Favorite Talks</en></t></a></li>
+                      <li><a href="#"><t><de>Programm</de><en>Schedule</en></t></a></li>
+                      <li><a href="#"><t><de>als iCal exportieren</de><en>iCal export</en></t></a></li>
+                      <li><a href="#"><t><de>Vortrag einreichen</de><en>Submit a talk proposal</en></t></a></li>                
+                      <li><a href="#"><t><de>Teilnehmer/Benutzer Suchen</de><en>Users - Search</en></t></a></li>
+                      <li><a href="#"><t><de>Teilnehmer/Benutzer Statistik</de><en>Users - Statistics</en></t></a></li>
+                      <li><a href="#"><t><de>Hotels &amp; Anreise</de><en>Hotels &amp; Arrivals</en></t></a></li>
+                      <li><a href="#"><t><de>Wiki - gpw</de><en>Wiki - gpw</en></t></a></li>
+                      <li><a href="#"><t><de>Wiki - Vorabend-Treffen</de><en>Wiki Pre-Conference Meeting</en></t></a></li>
+                      <li><a href="#"><t><de>Status</de><en>Status</en></t></a></li>
+                      <li><a href="#"><t><de>Presse</de><en>Press</en></t></a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#"><t><de>News</de><en</en>News</t></a></li>
+                  <li><a href="#"><t><de>Unterstützen/Sponsoren</de><en>Sponsoring/Sponsors</en></t></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> <t><de>Registrieren</de><en><t><de>Sign Up</en></a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> <t><de>Login</de><en>Log in</en></a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+
+
+  
+          <div class="navbar-wrapper mod_backboneit_navigation_menu bootstrap visible-xsx visible-mdx visible-lgx visible-smx hidden ncm">
+              <div class="container">
+            
+                <div class="navbar yamm navbar-default navbar-static-top" role="navigation">
+                  <div class="container">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                      <ul class="nav navbar-nav level_1 sf-js-enabled sf-arrows">
+              					<li class="hideMenuOnDesktop startseite regular leaf first hovernav">
+              						<a href="index.html" title="<t><de>Startseite</de><en>Home</en></t>" class="hideMenuOnDesktop startseite regular leaf first"><t><de>Startseite</de><en>Home</en></t></a>
+                        </li>
+                        
+              					<li class="yamm-fw item first desktop regular hovernav">
+              						<a href="news" title="News" class="regular leaf">News</a>                  
+              					</li>
+                        
+              					<li class="yamm-fw item regular hovernav">
+              						<a href="venue.html" title="<t><de>Veranstaltungsort</de><en>Venue</en></t>" class="regular leaf"><t><de>Veranstaltungsort</de><en>Venue</en></t></a>
+              					</li>
+                        
+              					<li class="regular leaf hovernav">
+              						<a href="stats" title="<t><de>Teilnehmer</de><en>Attendees</en></t>" class="regular leaf"><t><de>Teilnehmer</de><en>Attendees</en></t></a>
+                                  </li>
+                        
+              					<li class="regular leaf hovernav">
+              						<a href="schedule" title="<t><de>Programm</de><en>Schedule</en></t>" class="regular leaf"><t><de>Programm</de><en>Schedule</en></t></a>
+                                  </li>
+              					
+              					<li class="regular leaf hovernav">
+              						<a href="sponsoring.html" title="<t><de>Unterstützen</de><en>Sponsoring</en></t>" class="regular leaf"><t><de>Unterstützen</de><en>Sponsoring</en></t></a>
+                                  </li>
+
+              					<li class="regular leaf hovernav">
+              						<a href="sponsors.html" title="<t><de>Sponsoren</de><en>Sponsors</en></t>" class="regular leaf"><t><de>Sponsoren</de><en>Sponsors</en></t></a>
+                                  </li>
+
+              					<li class="regular leaf hovernav">
+              						<a href="status.html" title="Status" class="regular leaf">Status</a>
+                                  </li>					
+                        
+              					<li class="desktop regular leaf last hovernav">
+              						<a href="press.html" title="t><de>Presse</de><en>Press</en></t>" class="last regular leaf">t><de>Presse</de><en>Press</en></t></a>
+                        </li>
+                    
+              				</ul>
+      			         </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+
+      	</div>
+      </div>	  
+      <!--ncmende-->	  
+	  
+	  
+	  
+	  
+  	  <!--ncmstart-->
+  	  <div class="elemWrapper">
+  	  <!--ncmende-->
+        <nav id="topnav" class="navbar-wrapper mod_backboneit_navigation_menu bootstrap visible-xs visible-md visible-lg visible-sm"><!--ncmstart--><!--added all classes--><!--ncmende-->
+          <ul class="topnav">
+            <li><a href="index.html"><t><de>Startseite</de><en>Home</en></t></a></li>
+            <li><a href="news">News</a></li>
+            <li><a href="venue.html"><t><de>Veranstaltungsort</de><en>Venue</en></t></a></li>
+            <li><a href="stats"><t><de>Teilnehmer</de><en>Attendees</en></t></a></li>
+            <li><a href="schedule"><t><de>Programm</de><en>Schedule</en></t></a></li>
+            <li><a href="sponsoring.html"><t><de>Unterstützen</de><en>Sponsoring</en></t></a></li>
+            <li><a href="sponsors.html"><t><de>Sponsoren</de><en>Sponsors</en></t></a></li>
+            <li><a href="status.html">Status</a></li>
+            <li><a href="press.html"><t><de>Presse</de><en>Press</en></t></a></li>
+          </ul>
+            <div id="topnav_clearing"></div>
+        </nav>
+  	  <!--ncmstart-->
+  	  </div><!--elemWrapper-->
+  	  <!--ncmende-->	  
     </header>
+
+
     <div id="content">
       <aside id="sidebar">
-        <nav id="mainnav">
+        <nav id="mainnav"><!--ncmstart navbar navbar-fixed-bottom navbar-dark ncmend-->
           <h2><t><de>Dieser Workshop</de><en>This conference</en></t></h2>
           <ul class="mainnav">
             [% PROCESS menu %]
@@ -99,11 +273,12 @@
       </section>
       <div id="content_clearing"></div>
     </div>
+
+
     <footer id="footer">
       <p>
-        <a href="impressum.html"><t><de>Impressum</de><en>Imprint</en></t></a>
-			|
-		<a href="mailto:orga-gpw2016@list.cluster-team.com">orga-gpw2016@list.cluster-team.com</a>
+        <a href="impressum.html"><t><de>Impressum</de><en>Imprint</en></t></a> |
+        <a href="mailto:orga-gpw2016@list.cluster-team.com">orga-gpw2016@list.cluster-team.com</a>
       </p>
       <div id="socialshareprivacy"></div>
     </footer>
@@ -111,14 +286,36 @@
 			var lang_iso = '<t><de>de_DE</de><en>en_US</en></t>';
 			var lang_lc = '<t><de>de</de><en>en</en></t>';
 			var lang_uc = '<t><de>DE</de><en>EN</en></t>';
-			var stylechoose = '<t><de>Farben ändern</de><en>Change colors</en></t>';
+			//var stylechoose = '<t><de>Farben ändern</de><en>Change colors</en></t>';
 		</script>
     <script type="text/javascript" src="scripts/jquery.js" defer></script>
     <script type="text/javascript" src="scripts/jquery-migrate.js" defer></script>
+
+  	<!--startncm-->
+  	<!-- Latest compiled and minified JavaScript -->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous" defer></script>
+  	<!--endncm-->	
+
     <script type="text/javascript" src="scripts/jquery.socialshareprivacy.js" defer></script>
     <script type="text/javascript" src="scripts/jquery.cookie.js" defer></script>
     <script type="text/javascript" src="scripts/base.js" defer></script>
     <script type="text/javascript" src="/js/act.js" defer></script>
+
+    <!--ncmstart-->	
+    <script>
+        $(function(){
+          // bind change event to select
+          $('#archiv').on('change', function () {
+              var url = $(this).val(); // get selected value
+              if (url) { // require a URL
+                  window.location = url; // redirect
+              }
+              return false;
+          });
+        });
+    </script>
+    <!--ncmende-->	
+	
   </body>
 </html>
 
