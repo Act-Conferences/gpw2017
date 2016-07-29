@@ -36,11 +36,13 @@ header #otherworkshops {
   padding: 0 0.5em 0 0;
   text-align: right;
 }
+/* ncm removed
 #otherworkshops a {
     border: 1px solid black;
     padding: 0.3em;
     text-decoration: none;
 }
+*/
 ul.topnav {
   margin: 0;
   padding: 0;
@@ -146,3 +148,166 @@ textarea[name="content"] {
   cursor: pointer;
 }
 */
+/*
+ncm menu: add the .inverse-dropdown class to .dropdown-menu
+*/
+.inverse-dropdown {
+  background-color: #222;
+  border-color: #080808;
+}
+.inverse-dropdown>li>a {
+  color: #999;  
+}
+.inverse-dropdown>li>a:hover {
+  color: #fff;
+  background-color: #000;
+}
+.inverse-dropdown>.divider {
+  background-color: #000;  
+}
+/*
+ncm: re-color menu default
+src:http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3;
+*/
+/* navbar */
+.navbar-default.recolored {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}
+/* title */
+.navbar-default.recolored .navbar-brand {
+    color: #777;
+}
+.navbar-default.recolored .navbar-brand:hover,
+.navbar-default.recolored .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* link */
+.navbar-default.recolored .navbar-nav > li > a {
+    color: #777;
+}
+.navbar-default.recolored .navbar-nav > li > a:hover,
+.navbar-default.recolored .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-default.recolored .navbar-nav > .active > a, 
+.navbar-default.recolored .navbar-nav > .active > a:hover, 
+.navbar-default.recolored .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-default.recolored .navbar-nav > .open > a, 
+.navbar-default.recolored .navbar-nav > .open > a:hover, 
+.navbar-default.recolored .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default.recolored .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default.recolored .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default.recolored .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default.recolored .navbar-nav > .open > a .caret, 
+.navbar-default.recolored .navbar-nav > .open > a:hover .caret, 
+.navbar-default.recolored .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default.recolored .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default.recolored .navbar-toggle:hover,
+.navbar-default.recolored .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-default.recolored .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-default.recolored .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default.recolored .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default.recolored .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+/*
+ncm: re-color inverse menu
+src:http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3;
+*/
+/* navbar */
+.navbar-inverse.gpw {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}
+/* title */
+.navbar-inverse.gpw .navbar-brand {
+    color: #777;
+}
+.navbar-inverse.gpw .navbar-brand:hover,
+.navbar-inverse.gpw .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* link */
+.navbar-inverse.gpw .navbar-nav > li > a {
+    color: #777;
+}
+.navbar-inverse.gpw .navbar-nav > li > a:hover,
+.navbar-inverse.gpw .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-inverse.gpw .navbar-nav > .active > a, 
+.navbar-inverse.gpw .navbar-nav > .active > a:hover, 
+.navbar-inverse.gpw .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-inverse.gpw .navbar-nav > .open > a, 
+.navbar-inverse.gpw .navbar-nav > .open > a:hover, 
+.navbar-inverse.gpw .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-inverse.gpw .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-inverse.gpw .navbar-nav > .dropdown > a:hover .caret,
+.navbar-inverse.gpw .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-inverse.gpw .navbar-nav > .open > a .caret, 
+.navbar-inverse.gpw .navbar-nav > .open > a:hover .caret, 
+.navbar-inverse.gpw .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-inverse.gpw .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-inverse.gpw .navbar-toggle:hover,
+.navbar-inverse.gpw .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-inverse.gpw .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
