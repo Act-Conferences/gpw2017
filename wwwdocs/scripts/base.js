@@ -45,6 +45,7 @@ $(document).ready(function(){
   }); 
 });
 
+/*
 $(document).ready(function(){
   $('#header').append($('<div id="stylechoose">'+stylechoose+'</div>'));
   $('#stylechoose').css('position', 'absolute');
@@ -63,3 +64,4 @@ $(document).ready(function(){
   if ( $.cookie('gpw2017.oldcolors') == '1' )
     $('html').addClass('oldcolors');
 });
+*/
