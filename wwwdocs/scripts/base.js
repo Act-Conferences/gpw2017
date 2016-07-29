@@ -45,8 +45,10 @@ $(document).ready(function(){
   }); 
 });
 
-/*
+
 $(document).ready(function(){
+  /*
+  //stylechooser
   $('#header').append($('<div id="stylechoose">'+stylechoose+'</div>'));
   $('#stylechoose').css('position', 'absolute');
   $('#stylechoose').css( 'left', $('#header').position().left + $('#header').width() - $('#stylechoose').width() );
@@ -63,5 +65,23 @@ $(document).ready(function(){
   });
   if ( $.cookie('gpw2017.oldcolors') == '1' )
     $('html').addClass('oldcolors');
+  */
+
+  //
+
+  //ncmstart
+  //$(function(){
+    // bind change event to select archiv
+    $('#archiv').on('change', function () {
+        var url = $(this).val(); // get selected value
+        if (url) { // require a URL
+            window.location = url; // redirect
+        }
+        return false;
+    });
+  //});
+
+  //ncmende
+
 });
-*/
+

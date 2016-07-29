@@ -299,22 +299,7 @@
     <script type="text/javascript" src="scripts/jquery.socialshareprivacy.js" defer></script>
     <script type="text/javascript" src="scripts/jquery.cookie.js" defer></script>
     <script type="text/javascript" src="scripts/base.js" defer></script>
-    <script type="text/javascript" src="/js/act.js" defer></script>
-
-    <!--ncmstart-->	
-    <script>
-        $(function(){
-          // bind change event to select
-          $('#archiv').on('change', function () {
-              var url = $(this).val(); // get selected value
-              if (url) { // require a URL
-                  window.location = url; // redirect
-              }
-              return false;
-          });
-        });
-    </script>
-    <!--ncmende-->	
+    <script type="text/javascript" src="/js/act.js" defer></script>	
 	
   </body>
 </html>
