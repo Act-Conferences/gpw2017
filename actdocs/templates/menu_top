@@ -26,28 +26,52 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li><a href="venue.html"><t><de>Veranstaltungsort</de><en>Venue</en></t></a></li>
-                    <li><a href="stats"><t><de>Teilnehmer</de><en>Attendees</en></t></a></li>
+
+                    <li>
+                        <a href="[% make_uri('talks') %]"><t><de>Vorträge</de><en>Talks</en></t></a>
+                        <ul>
+                            <li class="lv3">
+                                <a href="[% make_uri('wanted.html') %]"><t><de>Vorschläge für Vorträge</de><en>Talk Suggestions</en></t></a>
+                            </li>                    
+                            <li class="lv3">
+                                <a href="#"><t><de>Vortrag einreichen</de><en>Submit a talk proposal</en></t></a>
+                            </li>                        
+                        </ul>
+                    </li> 
+                                      
+                    
                     <li><a href="[% make_uri('preise.html') %]"><t><de>Ticket-Preise</de><en>Ticket Prices</en></t></a></li>
-                    <li><a href="[% make_uri('wanted.html') %]"><t><de>Vorschläge für Vorträge</de><en>Tak Suggestions</en></t></a></li>
-                    <li><a href="#"><t><de>Vortrag einreichen</de><en>Submit a talk proposal</en></t></a></li>
+
                     
                     <!--
                     <li><a href="#"><t><de>Vorträge - Favorite Talks</de><en>Presentations - Favorite Talks</en></t></a></li>
                     <li><a href="schedule"><t><de>Programm</de><en>Schedule</en></t></a></li>
                     <li><a href="#"><t><de>als iCal exportieren</de><en>iCal export</en></t></a></li>
                     -->
-                                   
-                    <li><a href="#"><t><de>Teilnehmer/Benutzer Suchen</de><en>Users - Search</en></t></a></li>
-                    <li><a href="#"><t><de>Teilnehmer/Benutzer Statistik</de><en>Users - Statistics</en></t></a></li>
+
+
+                    <li>
+                        <a href="[% make_uri('stats') %]"><t><de>Teilnehmer</de><en>Attendees</en></t></a>
+                        <ul>
+                            <li class="lv3">
+                                <a href="[% make_uri('search') %]"><t><de>Benutzer Suchen</de><en>Users - Search</en></t></a>
+                            </li>                    
+                            <li class="lv3">
+                                <a href="[% make_uri('search') %]"><t><de>Teilnehmer/Benutzer Statistik</de><en>Users - Statistics</en></t></a>
+                            </li>                        
+                        </ul>
+                    </li> 
+
+                    
                     <li><a href="[% make_uri('hotels.html') %]"><t><de>Hotels &amp; Anreise</de><en>Hotels &amp; Arrivals</en></t></a></li>
                     <li>
                         <a href="[% make_uri('wiki') %]"><t><de>Wiki</de><en>Wiki</en></t></a>
                         <ul>
                             <li class="lv3">
-                                <a href="[% make_uri('wiki') %]"><span class="glyphicon glyphicon-chevron-right"> </span><t><de>Deutscher Perl-Workshop</de><en>German Perl Workshop</en></t></a>
+                                <a href="[% make_uri('wiki') %]"><!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>--><t><de>Deutscher Perl-Workshop</de><en>German Perl Workshop</en></t></a>
                             </li>                    
                             <li class="lv3">
-                                <a href="[% make_uri('wiki?node=VorabendTreffen') %]"><span class="glyphicon glyphicon-chevron-right"> </span><t><de>Vorabend-Treffen</de><en>Pre-Conference Meeting</en></t></a>
+                                <a href="[% make_uri('wiki?node=VorabendTreffen') %]"><!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>--><t><de>Vorabend-Treffen</de><en>Pre-Conference Meeting</en></t></a>
                             </li>                        
                         </ul>
                     </li>
@@ -81,10 +105,10 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li class="register lv1">
-                <a href="#"><span class="glyphicon glyphicon-user"></span> <t><de>Registrieren</de><en>Sign Up</en></t></a>
+                <a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <t><de>Registrieren</de><en>Sign Up</en></t></a>
             </li>
             <li class="login lv1">
-                <a href="#"><span class="glyphicon glyphicon-log-in"></span> <t><de>Login</de><en>Log in</en></t></a>
+                <a href="#"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> <t><de>Login</de><en>Log in</en></t></a>
             </li>
             <li class="langchanger lv1">
                 <a href="?<t><de>language=en</de><en>language=de</en></t>"><span class="glyphicon glyphicon-flag"></span> <t><de>EN</de><en>DE</en></t></a>
@@ -94,3 +118,4 @@
 </div>    
 
 [% END %]
+
