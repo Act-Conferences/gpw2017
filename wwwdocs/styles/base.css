@@ -191,8 +191,8 @@ ncm: menu - sm-devices 2 lines;
 
 /*ncm: menu - sm-devices 2 lines;*/
 @media (min-width: 768px) and (max-width: 991px) {
-  #header .navbar-nav .navbar-header,
-  #header .navbar-nav #gpwNavbar {
+  #header nav.navbar .navbar-header,
+  #header nav.navbar #gpwNavbar {
     display: block;
     float: none; 
   } 

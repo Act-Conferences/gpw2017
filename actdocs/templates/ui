@@ -130,6 +130,9 @@
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="#"><span class="glyphicon glyphicon-user"></span> <t><de>Registrieren</de><en>Sign Up</en></t></a></li>
                   <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> <t><de>Login</de><en>Log in</en></t></a></li>
+                  <li><a href="#?<t><de>language=en</de><en>language=de</en></t>"><span class="glyphicon glyphicon-flag"></span> <t><de>EN</de><en>DE</en></t></a></li>
+
+
                 </ul>
               </div>
             </div>
@@ -234,7 +237,6 @@
           <h2><t><de>Dieser Workshop</de><en>This conference</en></t></h2>
           <ul class="mainnav">
             [% PROCESS menu %]
-            [% PROCESS menu_test %]
           </ul>
         </nav>
         <!--

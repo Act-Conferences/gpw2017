@@ -1,9 +1,0 @@
-[% FILTER collapse %]
-
-    [% PROCESS menus/user %]
-
-    <li class="section"><a href="[% make_uri('preise.html') %]"><t><de>Ticket-Preise</de><en>Ticket Prices</en></t></a></li>
-    <li class="section"><a href="[% make_uri('wanted.html') %]"><t><de>Vorschläge für Vorträge</de><en>Talk suggestions</en></t></a></li>
-
-[% END %]
-
