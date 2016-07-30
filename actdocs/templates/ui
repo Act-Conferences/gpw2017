@@ -32,7 +32,7 @@
       <h1 id="site_name"><a href="index.html">[% global.conference.name %]</a></h1>
 
       <!--ncmstart--><!--id:otherworkshops-->
-      <div class="elemWrapper hidden ncm">
+      <div class="elemWrapper hiddenx ncm">
         <div class="container">	
         	<form id="archiv_form" action="#">  
         		<fieldset class="form-group"><!--style="display: inline-block;float: right;"-->
@@ -63,79 +63,14 @@
         </div>
       </div>
       <!--ncmende-->	  
-      <!--	   
-        <p id="otherworkshops">
-          <a href="http://act.yapc.eu/gpw2016/">2016</a>
-          <a href="http://act.yapc.eu/gpw2015/">2015</a>
-          <a href="http://act.yapc.eu/gpw2014/">2014</a>
-          <a href="http://act.yapc.eu/gpw2013/">2013</a>
-          <a href="http://conferences.yapceurope.org/gpw2012/">2012</a>
-          <a href="http://conferences.yapceurope.org/gpw2011/">2011</a>
-          <a href="http://conferences.yapceurope.org/gpw2010/">2010</a>
-          <a href="http://www.perl-workshop.de/de/2009/">2009</a>
-          <a href="http://www.perl-workshop.de/de/2008/">2008</a>
-          <a href="http://www.perl-workshop.de/de/2007/">2007</a>
-          <a href="http://www.perl-workshop.de/de/2006/">2006</a>
-          <a href="http://www.perl-workshop.de/de/2005/">2005</a>
-          <a href="http://www.perl-workshop.de/de/2004/">2004</a>
-          <a href="http://www.perl-workshop.de/de/2003/">2003</a>
-          <a href="http://www.perl-workshop.de/de/2002/">2002</a>
-          <a href="http://www.perl-workshop.de/de/2001/">2001</a>
-          <a href="http://www.perl-workshop.de/de/2000/">2000</a>
-          <a href="http://www.perl-workshop.de/de/1999/">1999</a>
-        </p> 
-      -->	  
+	  
       <!--ncmstart-->	  
       <div id="menustorage" class="hidden ncm">
       	<div class="elemWrapper">
 
 
-          <nav class="navbar navbar-inverse gpw navbar-fixed-top hidden ncm">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gpwNavbar">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><span class="sitetitle"><t><de>Deutscher Perl-Workshop</de><en>German Perl Workshop</en></t></span><span class="year"> 2017</span></a>
-              </div>
-              <div class="collapse navbar-collapse" id="gpwNavbar">
-                <ul class="nav navbar-nav">
-                  <li class="active"><a href="#"><t><de>Startseite</de><en>Home</en></t></a></li>
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><t><de>Workshop</de><en>Workshop</en></t> <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#"><t><de>Veranstaltungsort</de><en>Venue</en></t></a></li>
-                      <li><a href="#"><t><de>Teilnehmer</de><en>Attendees</en></t></a></li>
-                      <li><a href="#"><t><de>Ticket-Preise</de><en>Ticket Prices</en></t></a></li>
-                      <li><a href="#"><t><de>Vorschläge für Vorträge</de><en>Tak Suggestions</en></t></a></li>
-                      <li><a href="#"><t><de>Vorträge - Favorite Talks</de><en>Presentations - Favorite Talks</en></t></a></li>
-                      <li><a href="#"><t><de>Programm</de><en>Schedule</en></t></a></li>
-                      <li><a href="#"><t><de>als iCal exportieren</de><en>iCal export</en></t></a></li>
-                      <li><a href="#"><t><de>Vortrag einreichen</de><en>Submit a talk proposal</en></t></a></li>                
-                      <li><a href="#"><t><de>Teilnehmer/Benutzer Suchen</de><en>Users - Search</en></t></a></li>
-                      <li><a href="#"><t><de>Teilnehmer/Benutzer Statistik</de><en>Users - Statistics</en></t></a></li>
-                      <li><a href="#"><t><de>Hotels &amp; Anreise</de><en>Hotels &amp; Arrivals</en></t></a></li>
-                      <li><a href="#"><t><de>Wiki - gpw</de><en>Wiki - gpw</en></t></a></li>
-                      <li><a href="#"><t><de>Wiki - Vorabend-Treffen</de><en>Wiki Pre-Conference Meeting</en></t></a></li>
-                      <li><a href="#"><t><de>Status</de><en>Status</en></t></a></li>
-                      <li><a href="#"><t><de>Presse</de><en>Press</en></t></a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#"><t><de>News</de><en>News</en></t></a></li>
-                  <li><a href="#"><t><de>Unterstützen/Sponsoren</de><en>Sponsoring/Sponsors</en></t></a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> <t><de>Registrieren</de><en>Sign Up</en></t></a></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> <t><de>Login</de><en>Log in</en></t></a></li>
-                  <li><a href="#?<t><de>language=en</de><en>language=de</en></t>"><span class="glyphicon glyphicon-flag"></span> <t><de>EN</de><en>DE</en></t></a></li>
-
-
-                </ul>
-              </div>
-            </div>
+          <nav id="navtop" class="navbar navbar-inverse gpw navbar-fixed-top hidden ncm">
+            [% PROCESS menu_top %]
           </nav>
 
 
@@ -147,14 +82,6 @@
             
                 <div class="navbar yamm navbar-default navbar-static-top" role="navigation">
                   <div class="container">
-                    <div class="navbar-header">
-                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
-                    </div>
                     <div class="navbar-collapse collapse">
                       <ul class="nav navbar-nav level_1 sf-js-enabled sf-arrows">
               					<li class="hideMenuOnDesktop startseite regular leaf first hovernav">
@@ -209,7 +136,7 @@
 	  
 	  
   	  <!--ncmstart-->
-  	  <div class="elemWrapper">
+  	  <div class="elemWrapper hidden">
   	  <!--ncmende-->
         <nav id="topnav" class="navbar-wrapper mod_backboneit_navigation_menu bootstrap visible-xs visible-md visible-lg visible-sm"><!--ncmstart--><!--added all classes--><!--ncmende-->
           <ul class="topnav">
@@ -223,11 +150,12 @@
             <li><a href="status.html">Status</a></li>
             <li><a href="press.html"><t><de>Presse</de><en>Press</en></t></a></li>
           </ul>
-            <div id="topnav_clearing"></div>
+          <div id="topnav_clearing"></div>
         </nav>
   	  <!--ncmstart-->
   	  </div><!--elemWrapper-->
-  	  <!--ncmende-->	  
+  	  <!--ncmende-->	 
+       
     </header>
 
 
