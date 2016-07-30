@@ -33,7 +33,7 @@
 
       <!--ncmstart--><!--id:otherworkshops-->
       <div class="elemWrapper hiddenx ncm">
-        <div class="container">	
+        <div class="containerx">	
         	<form id="archiv_form" action="#">  
         		<fieldset class="form-group"><!--style="display: inline-block;float: right;"-->
         			<label for="archiv"><t><de>Workshop</de><en>Workshop</en></t>:</label>	  
@@ -65,11 +65,11 @@
       <!--ncmende-->	  
 	  
       <!--ncmstart-->	  
-      <div id="menustorage" class="hidden ncm">
+      <div id="menustorage" class="hiddenx ncm">
       	<div class="elemWrapper">
 
 
-          <nav id="navtop" class="navbar navbar-inverse gpw navbar-fixed-top hidden ncm">
+          <nav id="navtop" class="navbar navbar-inverse gpw navbar-fixed-top hiddenx ncm">
             [% PROCESS menu_top %]
           </nav>
 
