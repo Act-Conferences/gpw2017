@@ -154,8 +154,9 @@ textarea[name="content"] {
   cursor: pointer;
 }
 */
-.archivWrapper {
+.archivWrapper form {
   text-align:right;
+  padding: 7px;
 }
 .archivWrapper select.form-control {
   display: inline-block;
@@ -209,18 +210,18 @@ ncm: menu - sm-devices 2 lines;
 
 /*ncm: menu - sm-devices 2 lines;*/
 @media (min-width: 768px) and (max-width: 991px) {
-  #header nav.navbar .navbar-header,
-  #header nav.navbar #gpwNavbar {
+  #menustorage nav.navbar .navbar-header,
+  #menustorage nav.navbar #gpwNavbar {
     display: block;
     float: none; 
   } 
 } 
 @media (min-width: 768px) {
-  #header .navbar-nav .dropdown-menu {
-    min-with:280px;
+  #menustorage .navbar-nav .dropdown-menu {
+    min-width:280px;
   }
 }
-#header .navbar-nav>li>.dropdown-menu li ul {
+#menustorage .navbar-nav>li>.dropdown-menu li ul {
   list-style: none;
   padding-left: 2.5em;
 }
@@ -231,19 +232,19 @@ ncm: menu - sm-devices 2 lines;
     border-top-width: 20px;
 }
 /*lvl2 und lvl3 links auf selbe höhe bringen*/
-#header .navbar-nav .open .dropdown-menu .dropdown-header,
-#header .navbar-nav .open .dropdown-menu>li>a, 
-#header .navbar-nav .open .dropdown-menu li a {
+#menustorage .navbar-nav .open .dropdown-menu .dropdown-header,
+#menustorage .navbar-nav .open .dropdown-menu>li>a, 
+#menustorage .navbar-nav .open .dropdown-menu li a {
     padding: 5px 15px 5px 25px;
     display: block;
 }
 @media (max-width: 767px) {
   /*jeder link onclick feedback*/
-  #header .navbar-nav ul li a {
+  #menustorage .navbar-nav ul li a {
     text-decoration:none;
   }
-  #header .navbar-nav ul li a:active,
-  #header .navbar-nav ul li a:focus {
+  #menustorage .navbar-nav ul li a:active,
+  #menustorage .navbar-nav ul li a:focus {
     text-decoration: overline underline;
   }
 }
@@ -259,108 +260,108 @@ gpwbluedark #121221
 fast-weiss #ddd
 */
 /*gradient löschen*/
-#header .navbar-inverse.gpw,
-#header .navbar-inverse.gpw .navbar-nav>.active>a, 
-#header .navbar-inverse.gpw .navbar-nav>.open>a,
-#header .dropdown-menu>li>a:focus, 
-#header .dropdown-menu>li>a:hover {
+#menustorage .navbar-inverse.gpw,
+#menustorage .navbar-inverse.gpw .navbar-nav>.active>a, 
+#menustorage .navbar-inverse.gpw .navbar-nav>.open>a,
+#menustorage .dropdown-menu>li>a:focus, 
+#menustorage .dropdown-menu>li>a:hover {
     background-image:none;
     background:none;  
     filter: ;/*reset*/
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)" !important;
     background-repeat:no-repeat;
 }
-#header .navbar-inverse.gpw {
+#menustorage .navbar-inverse.gpw {
     background-color: #333366;/*gpwblue*/
     border-color: #232343;/*gpwbluemediumdark*/
 }
 /* title */
-#header .navbar-inverse.gpw .navbar-brand,
-#header .navbar-inverse.gpw .navbar-brand {
+#menustorage .navbar-inverse.gpw .navbar-brand,
+#menustorage .navbar-inverse.gpw .navbar-brand {
     color: #fff;/*weiss*/
 }
-#header .navbar-inverse.gpw .navbar-brand:hover,
-#header .navbar-inverse.gpw .navbar-brand:focus {
+#menustorage .navbar-inverse.gpw .navbar-brand:hover,
+#menustorage .navbar-inverse.gpw .navbar-brand:focus {
     color: #ddd;/*fast-weiss*/
 }
 /* link */
-#header .navbar-inverse.gpw .navbar-nav > li > a {
+#menustorage .navbar-inverse.gpw .navbar-nav > li > a {
     color: #fff;/*weiss*/
 }
-#header .navbar-inverse.gpw .navbar-nav > li > a:hover,
-#header .navbar-inverse.gpw .navbar-nav > li > a:focus {
+#menustorage .navbar-inverse.gpw .navbar-nav > li > a:hover,
+#menustorage .navbar-inverse.gpw .navbar-nav > li > a:focus {
     /*soll weiss bleiben*//*color: #ddd;*//*fast-weiss*/
 }
 /*ncm: menu - >= md hover effect bg color*/
 @media (min-width: 768px) {
-  #header .navbar-inverse.gpw .navbar-nav>li:hover,
-  #header .navbar-inverse.gpw .navbar-nav>li:focus {
+  #menustorage .navbar-inverse.gpw .navbar-nav>li:hover,
+  #menustorage .navbar-inverse.gpw .navbar-nav>li:focus {
     background-color: #232343;/*gpwbluemediumdark*/
   }
 } 
-#header .navbar-inverse.gpw .navbar-nav > .active > a, 
-#header .navbar-inverse.gpw .navbar-nav > .active > a:hover, 
-#header .navbar-inverse.gpw .navbar-nav > .active > a:focus {
+#menustorage .navbar-inverse.gpw .navbar-nav > .active > a, 
+#menustorage .navbar-inverse.gpw .navbar-nav > .active > a:hover, 
+#menustorage .navbar-inverse.gpw .navbar-nav > .active > a:focus {
     color: #fff;/*weiss #555;*/
     background-color: #121221;/*gpwbluedark*/ 
 }
-#header .navbar-inverse.gpw .navbar-nav > .open > a, 
-#header .navbar-inverse.gpw .navbar-nav > .open > a:hover, 
-#header .navbar-inverse.gpw .navbar-nav > .open > a:focus {
+#menustorage .navbar-inverse.gpw .navbar-nav > .open > a, 
+#menustorage .navbar-inverse.gpw .navbar-nav > .open > a:hover, 
+#menustorage .navbar-inverse.gpw .navbar-nav > .open > a:focus {
     color: #232343;/*gpwbluemediumdark*/
     background-color: #ddd;/*fast-weiss*/
 }
-#header .navbar-inverse.gpw .navbar-nav .open .dropdown-menu {
+#menustorage .navbar-inverse.gpw .navbar-nav .open .dropdown-menu {
   background-color: #333366;/*gpwblue*//*fallback*/
   background: rgba(51, 51, 102, 0.98);/*gpwblue - transparent*/  
 }
 /* caret */
-#header .navbar-inverse.gpw .navbar-nav > .dropdown > a .caret {
+#menustorage .navbar-inverse.gpw .navbar-nav > .dropdown > a .caret {
     border-top-color: #fff;/*weiss*/
     border-bottom-color: #fff;/*weiss*/
 }
-#header .navbar-inverse.gpw .navbar-nav > .dropdown > a:hover .caret,
-#header .navbar-inverse.gpw .navbar-nav > .dropdown > a:focus .caret {
+#menustorage .navbar-inverse.gpw .navbar-nav > .dropdown > a:hover .caret,
+#menustorage .navbar-inverse.gpw .navbar-nav > .dropdown > a:focus .caret {
     border-top-color: #ddd;/*fast-weiss*/
     border-bottom-color: #ddd;/*fast-weiss*/
 }
-#header .navbar-inverse.gpw .navbar-nav > .open > a .caret, 
-#header .navbar-inverse.gpw .navbar-nav > .open > a:hover .caret, 
-#header .navbar-inverse.gpw .navbar-nav > .open > a:focus .caret {
+#menustorage .navbar-inverse.gpw .navbar-nav > .open > a .caret, 
+#menustorage .navbar-inverse.gpw .navbar-nav > .open > a:hover .caret, 
+#menustorage .navbar-inverse.gpw .navbar-nav > .open > a:focus .caret {
     border-top-color: #121221;/*gpwbluedark*/ 
     border-bottom-color: #121221;/*gpwbluedark*/ 
 }
 /* mobile version */
-#header .navbar-inverse.gpw .navbar-toggle {
+#menustorage .navbar-inverse.gpw .navbar-toggle {
     border-color: #ddd;/*fast-weiss*/
 }
-#header .navbar-inverse.gpw .navbar-toggle:hover,
-#header .navbar-inverse.gpw .navbar-toggle:focus,
-#header .navbar-inverse.gpw .navbar-toggle:active {
+#menustorage .navbar-inverse.gpw .navbar-toggle:hover,
+#menustorage .navbar-inverse.gpw .navbar-toggle:focus,
+#menustorage .navbar-inverse.gpw .navbar-toggle:active {
     background-color: #ddd;/*fast-weiss*/
 }
-#header .navbar-inverse.gpw .navbar-toggle .icon-bar {
+#menustorage .navbar-inverse.gpw .navbar-toggle .icon-bar {
     background-color: #ddd;/*fast-weiss*/
 }
-#header .navbar-inverse.gpw .navbar-toggle:hover .icon-bar,
-#header .navbar-inverse.gpw .navbar-toggle:focus .icon-bar,
-#header .navbar-inverse.gpw .navbar-toggle:active .icon-bar {
+#menustorage .navbar-inverse.gpw .navbar-toggle:hover .icon-bar,
+#menustorage .navbar-inverse.gpw .navbar-toggle:focus .icon-bar,
+#menustorage .navbar-inverse.gpw .navbar-toggle:active .icon-bar {
     background-color: #333366;/*gpwblue*/
 }
 
 
 /*mobil nav submenu*/
 @media (max-width: 767px) {
-    #header .navbar-inverse.gpw .navbar-nav > li > a:hover,
-    #header .navbar-inverse.gpw .navbar-nav > li > a:focus {
+    #menustorage .navbar-inverse.gpw .navbar-nav > li > a:hover,
+    #menustorage .navbar-inverse.gpw .navbar-nav > li > a:focus {
         color: #ddd;/*fast-weiss*/
     }  
-    #header .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a {
+    #menustorage .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a {
         color: #ddd;/*fast-weiss*//*green;*/
     }
-    #header .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a:hover,
-    #header .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a:focus,
-    #header .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a:active {
+    #menustorage .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a:hover,
+    #menustorage .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a:focus,
+    #menustorage .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a:active {
         color: #fff;/*weiss*//*yellow;*/
     }
 }
