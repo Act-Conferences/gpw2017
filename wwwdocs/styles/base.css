@@ -199,6 +199,10 @@ ncm: menu - sm-devices 2 lines;
     float: none; 
   } 
 } 
+#header .navbar-nav>li>.dropdown-menu li ul {
+  list-style: none;
+  padding-left: 2.5em;
+}
 /*
 ncm: re-color inverse menu
 src:http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3;

@@ -24,7 +24,7 @@
   	<!--endncm-->
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/oldcolors.css">
-  </head>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><!--ncm-->
 
   <body>
     <header id="header">
@@ -69,7 +69,7 @@
       	<div class="elemWrapper">
 
 
-          <nav id="navtop" class="navbar navbar-inverse gpw navbar-fixed-top hiddenx ncm">
+          <nav id="navtop" class="navbar navbar-default navbar-inverse gpw navbar-fixed-top bootstrap hiddenx ncm" role="navigation">
             [% PROCESS menu_top %]
           </nav>
 
