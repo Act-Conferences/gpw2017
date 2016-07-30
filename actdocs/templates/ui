@@ -27,7 +27,8 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><!--ncm-->
 
   <body>
-    <header id="header" class="row">
+  
+    <header id="header" class="block rowx">
       <div id="logo"></div>
       <h1 id="site_name"><a href="index.html">[% global.conference.name %]</a></h1>
 
@@ -105,7 +106,7 @@
 
 
 
-    <div id="content"  class="row">
+    <div id="content"  class="block rowx">
 
 
       <section id="document" class="col-sm-9 col-md-8">
