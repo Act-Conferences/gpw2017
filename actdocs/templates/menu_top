@@ -8,14 +8,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html" title="<t><de>Startseite Deutscher Perl-Workshop</de><en>Home German Perl Workshop</en></t>">
+        <a class="navbar-brand" href="index.html" title="<t><de>Startseite Deutscher Perl-Workshop</de><en>Home German Perl Workshop</en></t> 2017">
             <span class="sitetitle"><t><de>Deutscher Perl-Workshop</de><en>German Perl Workshop</en></t></span><span class="year"> 2017</span>
         </a>
     </div>
 
     <div class="collapse navbar-collapse" id="gpwNavbar">
         <ul class="nav navbar-nav">
-            <li class="active start first lv1">
+            <li class="hidden-sm hidden-md hidden-lg activex start first lv1">
                 <a href="index.html" title="<t><de>Startseite</de><en>Home</en></t>">
                     <t><de>Startseite</de><en>Home</en></t>
                 </a>
@@ -78,8 +78,16 @@
                     <t><de>Programm</de><en>Schedule</en></t> <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="schedule"><t><de>Programm 2017</de><en>Schedule 2017</en></t></a></li>
-                    <li><a href="[% make_uri('timetable.ics') %]"><t><de>Programm als iCal exportieren</de><en>Schedule - iCal export</en></t></a></li>
+
+                    <li>
+                        <a href="[% make_uri('schedule') %]"><t><de>Programm 2017</de><en>Schedule 2017</en></t></a>
+                        <ul>
+                            <li class="lv3">
+                                <a href="[% make_uri('timetable.ics') %]"><t><de>als iCal exportieren</de><en>iCal export</en></t></a>
+                            </li>                    
+                        </ul>
+                    </li> 
+
                     <li><a href="[% make_uri('favtalks') %]"><t><de>Vorträge - Favorite Talks</de><en>Presentations - Favorite Talks</en></t></a></li>
                 </ul>
             </li>            
@@ -88,20 +96,20 @@
             </li>
             <li class="dropdown sponsoring lv1">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
-                    <t><de>Unterstützen/Sponsoren</de><en>Sponsoring/Sponsors</en></t> <span class="caret"></span>
+                    <span class="visible-sm"><t><de>Sponsoring</de><en>Sponsoring</en></t></span><span class="hidden-sm"><t><de>Unterstützen/Sponsoren</de><en>Sponsoring/Sponsors</en></t></span> <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="sponsoring.html"><t><de>Unterstützen</de><en>Sponsoring</en></t></a></li>
-                    <li><a href="sponsors.html"><t><de>Sponsoren</de><en>Sponsors</en></t></a></li>
+                    <li><a href="sponsoring.html"><t><de>Sponsor werden</de><en>Becoming a sponsor</en></t></a></li><!--Unterstützen/Sponsoring-->
+                    <li><a href="sponsors.html"><t><de>Workshop Sponsoren</de><en>Conference sponsors</en></t></a></li>
                 </ul>
             </li>                    
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li class="register lv1">
-                <a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <t><de>Registrieren</de><en>Sign Up</en></t></a>
+                <a href="[% make_uri('register') %]"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <t><de>Registrieren</de><en>Sign Up</en></t></a>
             </li>
             <li class="login lv1">
-                <a href="#"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> <t><de>Login</de><en>Log in</en></t></a>
+                <a href="[% make_uri('main') %]"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> <t><de>Login</de><en>Log in</en></t></a>
             </li>
             <li class="langchanger lv1">
                 <a href="?<t><de>language=en</de><en>language=de</en></t>"><span class="glyphicon glyphicon-flag"></span> <t><de>EN</de><en>DE</en></t></a>
