@@ -1,19 +1,25 @@
 [% FILTER collapse %]
 
     <!--anmelden:login/register und sprachwechsel-->
-    [%# PROCESS menus/user %]
+    [% PROCESS menus/user %]
 
+    <!--
     <li class="section"><a href="[% make_uri('preise.html') %]"><t><de>Ticket-Preise</de><en>Ticket Prices</en></t></a></li>
     <li class="section"><a href="[% make_uri('wanted.html') %]"><t><de>Vorschläge für Vorträge</de><en>Talk suggestions</en></t></a></li>
+    -->
 
     [% PROCESS menus/talks %]<!--mainmenu talks and submenus-->
 
     [% PROCESS menus/news %]
 
+    <!--
     <li class="section"><a href="[% make_uri('hotels.html') %]"><t><de>Hotels & Anreise</de><en>Hotels & arrival</en></t></a></li>
-    
+    -->
+
     [% PROCESS menus/wiki %]<!--mainmenu wiki gpw-->
-    <li class="child"><a href="[% make_uri('wiki?node=VorabendTreffen') %]"><t><de>Vorabend-Treffen</de><en>Pre-Conference Meeting</en></t></a></li>    
+    <!--
+    <li class="child"><a href="[% make_uri('wiki?node=VorabendTreffen') %]"><t><de>Vorabend-Treffen</de><en>Pre-Conference Meeting</en></t></a></li>
+    -->    
 
     [% PROCESS menus/users %]<!--benutzer suchen/statistik-->    
 
