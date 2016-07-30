@@ -154,6 +154,7 @@ textarea[name="content"] {
   cursor: pointer;
 }
 */
+
 .archivWrapper form {
   text-align:right;
   padding: 7px;
@@ -166,6 +167,21 @@ textarea[name="content"] {
     content: '';
     display: block;
     clear: both;
+}
+
+li.lv3 > a:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+
+  content: "\f054";/*chevron-right*/
+  text-decoration: none;
+  margin-right: 0.5em;
+  font-size: 8px;
+  line-height: 17px;
+  vertical-align: text-top;
 }
 
 /*
@@ -200,6 +216,18 @@ ncm: menu - sm-devices 2 lines;
     float: none; 
   } 
 } 
+/*alternative zu hidden-sm - einblenden im background*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .register .glyphicon,
+    .login .glyphicon {
+        position: absolute; 
+        top: 10px;
+        left: 2px;
+        color: transparent;/*fallback*/
+        color: rgba(255,255,255,0.2);
+        font-size: 30px;   
+    }
+}
 @media (min-width: 768px) {
   #menustorage .navbar-nav .dropdown-menu {
     min-width:280px;
@@ -207,7 +235,7 @@ ncm: menu - sm-devices 2 lines;
 }
 #menustorage .navbar-nav>li>.dropdown-menu li ul {
   list-style: none;
-  padding-left: 2.5em;
+  padding:0;/*padding-left: 2.5em;*/
 }
 .xxx .caret {
     float: right;
@@ -215,12 +243,23 @@ ncm: menu - sm-devices 2 lines;
     border-right-width: 20px;
     border-top-width: 20px;
 }
-/*lvl2 und lvl3 links auf selbe höhe bringen*/
+/*lv2 und lv3 links auf selbe höhe bringen*/
 #menustorage .navbar-nav .open .dropdown-menu .dropdown-header,
 #menustorage .navbar-nav .open .dropdown-menu>li>a, 
 #menustorage .navbar-nav .open .dropdown-menu li a {
     padding: 5px 15px 5px 25px;
     display: block;
+}
+/*einrückung lv3*/ 
+#menustorage .navbar-nav .dropdown-menu li ul li.lv3 a {
+    padding-left: 45px;
+}
+/*bootstrap überschreiben*/
+#menustorage .navbar-nav.dropdown-menu>li>a:focus, 
+#menustorage .navbar-nav.dropdown-menu>li>a:hover,
+#menustorage .navbar-nav.dropdown-menu li a:focus, 
+#menustorage .navbar-nav.dropdown-menu li a:hover {
+  text-decoration:underline;
 }
 @media (max-width: 767px) {
   /*jeder link onclick feedback*/
