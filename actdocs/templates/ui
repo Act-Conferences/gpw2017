@@ -27,42 +27,11 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><!--ncm-->
 
   <body>
-    <header id="header">
+    <header id="header" class="row">
       <div id="logo"></div>
       <h1 id="site_name"><a href="index.html">[% global.conference.name %]</a></h1>
 
-      <!--ncmstart--><!--id:otherworkshops-->
-      <div class="elemWrapper hiddenx ncm">
-        <div class="containerx">	
-        	<form id="archiv_form" action="#">  
-        		<fieldset class="form-group"><!--style="display: inline-block;float: right;"-->
-        			<label for="archiv"><t><de>Workshop</de><en>Workshop</en></t>:</label>	  
-        			<select class="selectpicker form-control" id="archiv"><!--style="display: inline-block;width: auto;"-->
-        			  <option value="index.html" selected="selected">2017</option>
-        			  <option value="http://act.yapc.eu/gpw2016/">2016</option>
-        			  <option value="http://act.yapc.eu/gpw2015/">2015</option>
-        			  <option value="http://act.yapc.eu/gpw2014/">2014</option>
-        			  <option value="http://act.yapc.eu/gpw2013/">2013</option>
-        			  <option value="http://conferences.yapceurope.org/gpw2012/">2012</option>
-        			  <option value="http://conferences.yapceurope.org/gpw2011/">2011</option>
-        			  <option value="http://conferences.yapceurope.org/gpw2010/">2010</option>
-        			  <option value="http://www.perl-workshop.de/de/2009/">2009</option>
-        			  <option value="http://www.perl-workshop.de/de/2008/">2008</option>
-        			  <option value="http://www.perl-workshop.de/de/2007/">2007</option>
-        			  <option value="http://www.perl-workshop.de/de/2006/">2006</option>
-        			  <option value="http://www.perl-workshop.de/de/2005/">2005</option>
-        			  <option value="http://www.perl-workshop.de/de/2004/">2004</option>
-        			  <option value="http://www.perl-workshop.de/de/2003/">2003</option>
-        			  <option value="http://www.perl-workshop.de/de/2002/">2002</option>
-        			  <option value="http://www.perl-workshop.de/de/2001/">2001</option>
-        			  <option value="http://www.perl-workshop.de/de/2000/">2000</option>
-        			  <option value="http://www.perl-workshop.de/de/1999/">1999</option>
-        			</select>
-        		</fieldset>
-        	</form>
-        </div>
-      </div>
-      <!--ncmende-->	  
+  
 	  
       <!--ncmstart-->	  
       <div id="menustorage" class="hiddenx ncm">
@@ -159,8 +128,49 @@
     </header>
 
 
-    <div id="content">
-      <aside id="sidebar">
+    <div id="content"  class="row">
+
+
+
+      <section id="document" class="col-sm-7 col-md-8">
+        [% content %]
+      </section>
+
+      <aside id="sidebar" class="col-sm-5 col-md-4">
+
+        <!--ncmstart--><!--id:otherworkshops-->
+        <div class="elemWrapper archivWrapper hiddenx ncm">
+          <div class="containerx">  
+            <form id="archiv_form" action="#">  
+              <fieldset class="form-group"><!--style="display: inline-block;float: right;"-->
+                <label for="archiv"><t><de>Workshop</de><en>Conference</en></t>:</label>    
+                <select class="selectpicker form-control" id="archiv"><!--style="display: inline-block;width: auto;"-->
+                  <option value="index.html" selected="selected">2017</option>
+                  <option value="http://act.yapc.eu/gpw2016/">2016</option>
+                  <option value="http://act.yapc.eu/gpw2015/">2015</option>
+                  <option value="http://act.yapc.eu/gpw2014/">2014</option>
+                  <option value="http://act.yapc.eu/gpw2013/">2013</option>
+                  <option value="http://conferences.yapceurope.org/gpw2012/">2012</option>
+                  <option value="http://conferences.yapceurope.org/gpw2011/">2011</option>
+                  <option value="http://conferences.yapceurope.org/gpw2010/">2010</option>
+                  <option value="http://www.perl-workshop.de/de/2009/">2009</option>
+                  <option value="http://www.perl-workshop.de/de/2008/">2008</option>
+                  <option value="http://www.perl-workshop.de/de/2007/">2007</option>
+                  <option value="http://www.perl-workshop.de/de/2006/">2006</option>
+                  <option value="http://www.perl-workshop.de/de/2005/">2005</option>
+                  <option value="http://www.perl-workshop.de/de/2004/">2004</option>
+                  <option value="http://www.perl-workshop.de/de/2003/">2003</option>
+                  <option value="http://www.perl-workshop.de/de/2002/">2002</option>
+                  <option value="http://www.perl-workshop.de/de/2001/">2001</option>
+                  <option value="http://www.perl-workshop.de/de/2000/">2000</option>
+                  <option value="http://www.perl-workshop.de/de/1999/">1999</option>
+                </select>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <!--ncmende-->  
+
         <nav id="mainnav"><!--ncmstart navbar navbar-fixed-bottom navbar-dark ncmend-->
           <h2><t><de>Dieser Workshop</de><en>This conference</en></t></h2>
           <ul class="mainnav">
@@ -199,9 +209,8 @@
           </ul>
         </section>
       </aside>
-      <section id="document">
-        [% content %]
-      </section>
+
+
       <div id="content_clearing"></div>
     </div>
 

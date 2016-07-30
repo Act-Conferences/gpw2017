@@ -5,7 +5,7 @@ html {
   background-color: #36393D;
 }
 body {
-  width: 940px;
+  max-width:940px;/*width: 940px;*//*ncm*/
   margin: 1em auto;
   padding: 20px;
   background-color: #FFFFFF;
@@ -67,10 +67,12 @@ ul.topnav li span {
 #content {
   padding: 1em 0;
 }
+/*
 #sidebar {
   float: left;
   width: 300px;
 }
+*/
 #sidebar nav,
 #sidebar section {
   margin: 0 0 1em;
@@ -109,9 +111,11 @@ ul.mainnav li.section {
   max-width: 85%;
 }
 #document {
+  /*
   width: 590px;
   margin: 0 0 0 320px;
   padding: 15px;
+  */
   background-color: #F9F7ED;
   text-align: justify;
 }
@@ -150,6 +154,18 @@ textarea[name="content"] {
   cursor: pointer;
 }
 */
+.archivWrapper {
+  text-align:right;
+}
+.archivWrapper select.form-control {
+  display: inline-block;
+  width: auto;
+}
+.clearfixafter:after {
+    content: '';
+    display: block;
+    clear: both;
+}
 /*
 ncm menu: add the .inverse-dropdown class to .dropdown-menu
 */
@@ -199,9 +215,37 @@ ncm: menu - sm-devices 2 lines;
     float: none; 
   } 
 } 
+@media (min-width: 768px) {
+  #header .navbar-nav .dropdown-menu {
+    min-with:280px;
+  }
+}
 #header .navbar-nav>li>.dropdown-menu li ul {
   list-style: none;
   padding-left: 2.5em;
+}
+.xxx .caret {
+    float: right;
+    border-left-width: 20px;
+    border-right-width: 20px;
+    border-top-width: 20px;
+}
+/*lvl2 und lvl3 links auf selbe höhe bringen*/
+#header .navbar-nav .open .dropdown-menu .dropdown-header,
+#header .navbar-nav .open .dropdown-menu>li>a, 
+#header .navbar-nav .open .dropdown-menu li a {
+    padding: 5px 15px 5px 25px;
+    display: block;
+}
+@media (max-width: 767px) {
+  /*jeder link onclick feedback*/
+  #header .navbar-nav ul li a {
+    text-decoration:none;
+  }
+  #header .navbar-nav ul li a:active,
+  #header .navbar-nav ul li a:focus {
+    text-decoration: overline underline;
+  }
 }
 /*
 ncm: re-color inverse menu
