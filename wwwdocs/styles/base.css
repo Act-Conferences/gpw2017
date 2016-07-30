@@ -241,7 +241,7 @@ fast-weiss #ddd
 }
 #header .navbar-inverse.gpw .navbar-nav > li > a:hover,
 #header .navbar-inverse.gpw .navbar-nav > li > a:focus {
-    color: #ddd;/*fast-weiss*/
+    /*soll weiss bleiben*//*color: #ddd;*//*fast-weiss*/
 }
 /*ncm: menu - >= md hover effect bg color*/
 @media (min-width: 768px) {
@@ -303,6 +303,10 @@ fast-weiss #ddd
 
 /*mobil nav submenu*/
 @media (max-width: 767px) {
+    #header .navbar-inverse.gpw .navbar-nav > li > a:hover,
+    #header .navbar-inverse.gpw .navbar-nav > li > a:focus {
+        color: #ddd;/*fast-weiss*/
+    }  
     #header .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a {
         color: #ddd;/*fast-weiss*//*green;*/
     }
