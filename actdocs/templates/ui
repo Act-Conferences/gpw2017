@@ -234,6 +234,7 @@
           <h2><t><de>Dieser Workshop</de><en>This conference</en></t></h2>
           <ul class="mainnav">
             [% PROCESS menu %]
+            [% PROCESS menu_test %]
           </ul>
         </nav>
         <!--

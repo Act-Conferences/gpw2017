@@ -166,78 +166,37 @@ ncm menu: add the .inverse-dropdown class to .dropdown-menu
   background-color: #000;  
 }
 /*
-ncm: re-color menu default
-src:http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3;
+ncm: menu - sm-devices 2 lines;
 */
-/* navbar */
-.navbar-default.recolored {
-    background-color: #F8F8F8;
-    border-color: #E7E7E7;
-}
-/* title */
-.navbar-default.recolored .navbar-brand {
-    color: #777;
-}
-.navbar-default.recolored .navbar-brand:hover,
-.navbar-default.recolored .navbar-brand:focus {
-    color: #5E5E5E;
-}
-/* link */
-.navbar-default.recolored .navbar-nav > li > a {
-    color: #777;
-}
-.navbar-default.recolored .navbar-nav > li > a:hover,
-.navbar-default.recolored .navbar-nav > li > a:focus {
-    color: #333;
-}
-.navbar-default.recolored .navbar-nav > .active > a, 
-.navbar-default.recolored .navbar-nav > .active > a:hover, 
-.navbar-default.recolored .navbar-nav > .active > a:focus {
-    color: #555;
-    background-color: #E7E7E7;
-}
-.navbar-default.recolored .navbar-nav > .open > a, 
-.navbar-default.recolored .navbar-nav > .open > a:hover, 
-.navbar-default.recolored .navbar-nav > .open > a:focus {
-    color: #555;
-    background-color: #D5D5D5;
-}
-/* caret */
-.navbar-default.recolored .navbar-nav > .dropdown > a .caret {
-    border-top-color: #777;
-    border-bottom-color: #777;
-}
-.navbar-default.recolored .navbar-nav > .dropdown > a:hover .caret,
-.navbar-default.recolored .navbar-nav > .dropdown > a:focus .caret {
-    border-top-color: #333;
-    border-bottom-color: #333;
-}
-.navbar-default.recolored .navbar-nav > .open > a .caret, 
-.navbar-default.recolored .navbar-nav > .open > a:hover .caret, 
-.navbar-default.recolored .navbar-nav > .open > a:focus .caret {
-    border-top-color: #555;
-    border-bottom-color: #555;
-}
-/* mobile version */
-.navbar-default.recolored .navbar-toggle {
-    border-color: #DDD;
-}
-.navbar-default.recolored .navbar-toggle:hover,
-.navbar-default.recolored .navbar-toggle:focus {
-    background-color: #DDD;
-}
-.navbar-default.recolored .navbar-toggle .icon-bar {
-    background-color: #CCC;
-}
-@media (max-width: 767px) {
-    .navbar-default.recolored .navbar-nav .open .dropdown-menu > li > a {
-        color: #777;
-    }
-    .navbar-default.recolored .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-default.recolored .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #333;
-    }
-}
+@media(max-width:767px){}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {}
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {}
+/* Large desktops and laptops */
+@media (min-width: 1200px) {}
+
+@media(max-width: @screen-xs-max){}
+@media(min-width: @screen-sm-min){}  
+@media(min-width: @screen-md-min){}  
+@media(min-width: @screen-lg-min){}
+
+/*ncm: menu - sm-devices 2 lines;*/
+@media (min-width: 768px) and (max-width: 991px) {
+  #header .navbar-nav .navbar-header,
+  #header .navbar-nav #gpwNavbar {
+    display: block;
+    float: none; 
+  } 
+} 
 /*
 ncm: re-color inverse menu
 src:http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3;
@@ -282,6 +241,13 @@ fast-weiss #ddd
 #header .navbar-inverse.gpw .navbar-nav > li > a:focus {
     color: #ddd;/*fast-weiss*/
 }
+/*ncm: menu - >= md hover effect bg color*/
+@media (min-width: 768px) {
+  #header .navbar-inverse.gpw .navbar-nav>li:hover,
+  #header .navbar-inverse.gpw .navbar-nav>li:focus {
+    background-color: #232343;/*gpwbluemediumdark*/
+  }
+} 
 #header .navbar-inverse.gpw .navbar-nav > .active > a, 
 #header .navbar-inverse.gpw .navbar-nav > .active > a:hover, 
 #header .navbar-inverse.gpw .navbar-nav > .active > a:focus {
@@ -319,21 +285,28 @@ fast-weiss #ddd
     border-color: #ddd;/*fast-weiss*/
 }
 #header .navbar-inverse.gpw .navbar-toggle:hover,
-#header .navbar-inverse.gpw .navbar-toggle:focus {
+#header .navbar-inverse.gpw .navbar-toggle:focus,
+#header .navbar-inverse.gpw .navbar-toggle:active {
     background-color: #ddd;/*fast-weiss*/
 }
 #header .navbar-inverse.gpw .navbar-toggle .icon-bar {
     background-color: #ddd;/*fast-weiss*/
 }
+#header .navbar-inverse.gpw .navbar-toggle:hover .icon-bar,
+#header .navbar-inverse.gpw .navbar-toggle:focus .icon-bar,
+#header .navbar-inverse.gpw .navbar-toggle:active .icon-bar {
+    background-color: #333366;/*gpwblue*/
+}
 
 
-
+/*mobil nav submenu*/
 @media (max-width: 767px) {
     #header .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a {
-        color: green;
+        color: #ddd;/*fast-weiss*//*green;*/
     }
     #header .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a:hover,
-    #header .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: yellow;
+    #header .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a:focus,
+    #header .navbar-inverse.gpw .navbar-nav .open .dropdown-menu > li > a:active {
+        color: #fff;/*weiss*//*yellow;*/
     }
 }
