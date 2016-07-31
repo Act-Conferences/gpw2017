@@ -25,13 +25,17 @@
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/oldcolors.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><!--ncm-->
+  </head>
+
 
   <body class="no-fixed-header">
   
     <header id="header" class="block rowx">
-      <div class="headerContent">
-        <div id="logo" title="[% global.conference.name %]"></div>
-        <h1 id="site_name" title="[% global.conference.name %]"><a href="index.html">[% global.conference.name %]</a></h1>
+      <div class="headerContent col-xs-12 no-float">
+        <a class="homelink clearfixafter" href="index.html" title="[% global.conference.name %]">
+          <div id="logo" class="col-xs-3"></div>
+          <h1 id="site_name" class="col-xs-7">[% global.conference.name %]</h1>
+        </a>
       </div>
   
 	  
