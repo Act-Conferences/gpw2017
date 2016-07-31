@@ -1,14 +1,14 @@
 [% FILTER collapse %]
 
 <div class="container-fluid">
-    <div class="navbar-header">
+    <div class="navbar-header clearfixafter">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gpwNavbar">
             <span class="sr-only"><t><de>Navigation ein-/ausschalten</de><en>Toggle navigation</en></t></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand hidden-sm" href="index.html" title="<t><de>Startseite Deutscher Perl-Workshop</de><en>Home German Perl Workshop</en></t> 2017">
+        <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="index.html" title="<t><de>Startseite Deutscher Perl-Workshop</de><en>Home German Perl Workshop</en></t> 2017">
             <span class="sitetitle"><t><de>Deutscher Perl-Workshop</de><en>German Perl Workshop</en></t></span><span class="year"> 2017</span>
         </a>
     </div>
