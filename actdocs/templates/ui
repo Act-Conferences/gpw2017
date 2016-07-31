@@ -29,9 +29,10 @@
   <body>
   
     <header id="header" class="block rowx">
-      <div id="logo"></div>
-      <h1 id="site_name"><a href="index.html">[% global.conference.name %]</a></h1>
-
+      <div class="headerContent">
+        <div id="logo" title="[% global.conference.name %]"></div>
+        <h1 id="site_name" title="[% global.conference.name %]"><a href="index.html">[% global.conference.name %]</a></h1>
+      </div>
   
 	  
       <!--ncmstart-->	  
@@ -39,7 +40,7 @@
       	<div class="elemWrapper">
 
 
-          <nav id="navtop" class="navbar navbar-default navbar-inverse gpw navbar-fixed-top bootstrap hiddenx ncm" role="navigation">
+          <nav id="navtop" class="navbar navbar-default navbar-inverse gpw navbar-fixed-topx navbar-static-top bootstrap hiddenx ncm" role="navigation">
             [% PROCESS menu_top %]
           </nav>
 
