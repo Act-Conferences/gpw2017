@@ -101,15 +101,16 @@ header #otherworkshops {
     text-decoration: none;
 }
 */
-#menustorrage .navbar-brand {
+#menustorage .navbar-brand {
   float: left;
   display: inline-block;  
 }
-#menustorrage .navbar-header span {
+#menustorage .navbar-header span {
   @media(max-width:767px){
     font-size: 12px;
   }
 }
+/*
 ul.topnav {
   margin: 0;
   padding: 0;
@@ -126,6 +127,7 @@ ul.topnav li span {
   padding: 0.8em 1em;
   text-decoration: none;
 }
+*/
 #topnav_clearing {
   clear: left;
 }
@@ -182,7 +184,7 @@ ul.mainnav li.section {
   padding: 15px;
   */
   background-color: #F9F7ED;
-  text-align: justify;
+  /*text-align: justify;*//*removed ncm*/
 }
 #document table {
   text-align: left;
@@ -219,7 +221,7 @@ textarea[name="content"] {
   cursor: pointer;
 }
 */
-#header .headerContent a {
+#header .headerContent a.homelink {
   display:block;
 }
 .archivWrapper form {
@@ -238,8 +240,7 @@ textarea[name="content"] {
 .no-float {
   float:none;
 }
-#header
-li.lv3 > a:before {
+#menustorage .navbar-nav li.lv3 > a:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -254,6 +255,79 @@ li.lv3 > a:before {
   vertical-align: text-top;
 }
 
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+#document .icon-envelope:before,
+#footer .icon-envelope:before {
+  margin-right:0.25em;
+} 
+/*i:after{ content: '\2022';}*/
+
+/*hier überschreiben damit orig script austauschbar bleibt*/
+.social_share_privacy {
+  margin-top: 50px;
+  margin-bottom: 30px; 
+  text-align: center;
+}
+.social_share_privacy .social_share_privacy_area {
+  width: auto;
+  height: auto;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: inline-block;
+}
+.social_share_privacy .social_share_privacy_area {
+  height:auto;
+}
+.social_share_privacy .social_share_privacy_area li.help_info,
+.social_share_privacy .social_share_privacy_area li.facebook,
+.social_share_privacy .social_share_privacy_area li.twitter,
+.social_share_privacy .social_share_privacy_area li.gplus,
+.social_share_privacy .social_share_privacy_area li.settings_info { 
+}
+.social_share_privacy .social_share_privacy_area li.help_info {
+  width: 33% !important;/*width: auto;*/
+  padding-right: 15px !important;
+}
+.social_share_privacy .social_share_privacy_area li.facebook {
+  width: 132px !important;  
+}
+.social_share_privacy .social_share_privacy_area li.twitter {
+  width: 104px !important;  
+}
+.social_share_privacy .social_share_privacy_area li.gplus {
+  width: 68px !important; 
+}
+.social_share_privacy .social_share_privacy_area li.settings_info {
+  padding-right: 0 !important;
+  /*top:0;*/
+  width: auto;
+  top: 8px;
+  width: 100%;
+  background: yellow;
+  display: block;
+  height: 21px;
+}
+.social_share_privacy .social_share_privacy_area li.settings_info .settings_info_menu {
+  width: 100%;
+  min-width:135px;
+  max-width: 400px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.social_share_privacy .social_share_privacy_area li div.tweet,
+.social_share_privacy .social_share_privacy_area li div.gplusone {
+  width:auto;
+}
 /*
 ncm: menu - sm-devices 2 lines;
 */
@@ -313,6 +387,19 @@ ncm: menu - sm-devices 2 lines;
     border-right-width: 20px;
     border-top-width: 20px;
 }
+/*caret über link*/
+#menustorage .navbar-nav > .dropdown > a {
+  z-index:2;
+}
+#menustorage .navbar-nav > .dropdown > a .caret {
+    z-index:3;
+}
+/*
+.navbar-nav .dropdown .dropdown-menu a:focus, 
+.navbar-nav .dropdown .dropdown-menu a:hover {
+    text-decoration: underline;
+}
+*/
 /*lv2 und lv3 links auf selbe höhe bringen*/
 #menustorage .navbar-nav .open .dropdown-menu .dropdown-header,
 #menustorage .navbar-nav .open .dropdown-menu>li>a, 
@@ -325,10 +412,12 @@ ncm: menu - sm-devices 2 lines;
     padding-left: 45px;
 }
 /*bootstrap überschreiben*/
-#menustorage .navbar-nav.dropdown-menu>li>a:focus, 
-#menustorage .navbar-nav.dropdown-menu>li>a:hover,
-#menustorage .navbar-nav.dropdown-menu li a:focus, 
-#menustorage .navbar-nav.dropdown-menu li a:hover {
+#menustorage .navbar-nav ul li a:active,
+#menustorage .navbar-nav ul li a:focus,
+#menustorage .navbar-nav .dropdown-menu>li>a:focus, 
+#menustorage .navbar-nav .dropdown-menu>li>a:hover,
+#menustorage .navbar-nav .dropdown-menu li a:focus, 
+#menustorage .navbar-nav .dropdown-menu li a:hover {
   text-decoration:underline;
 }
 @media (max-width: 767px) {

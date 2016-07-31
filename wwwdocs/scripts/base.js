@@ -48,7 +48,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   /*
-  //stylechooser
+  //stylechooser removed by ncm:
+  
   $('#header').append($('<div id="stylechoose">'+stylechoose+'</div>'));
   $('#stylechoose').css('position', 'absolute');
   $('#stylechoose').css( 'left', $('#header').position().left + $('#header').width() - $('#stylechoose').width() );
@@ -67,7 +68,6 @@ $(document).ready(function(){
     $('html').addClass('oldcolors');
   */
 
-  //
 
   //ncmstart
   //$(function(){
