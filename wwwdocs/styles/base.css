@@ -4,15 +4,35 @@ html {
   line-height: 1.5em;
   background-color: #36393D;
 }
+/*todo:tabellen aufspüren*/
+/*todo: mainnav active links highlighten*/
+/*todo: verwendete forms in bootstrap umbauen*/
+/*todo:.fixed-header bei scroll 50px script add-replace class*/
 body,
 body.no-fixed-header {
   max-width:940px;/*width: 940px;*//*ncm*/
-  margin: 0 auto 1em auto;/*ncm*/
+  margin: 0 auto;/* 1em auto;*//*ncm*/
   padding: 0;/*padding: 20px;*//*ncm*/
   background-color: #FFFFFF;
 }
 body.fixed-header {
   padding-top:50px;
+}
+@media (min-width: 768px) {
+}
+@media(min-width: 992px) {
+}
+@media(min-width:1200px) {
+}
+/*headercontent überall ausblenden*/
+body.fixed-header #header .headerContent {
+  display:none;
+}
+/*header brand bei xs einblenden. bei > xs nicht, da dort startseitenlink vorhanden ist*/
+@media (max-width: 767px) {
+  body.fixed-header #header a.navbar-brand {
+    display: block !important;
+  }
 }
 #header {
   color: #FFFFFF;
@@ -101,13 +121,16 @@ header #otherworkshops {
     text-decoration: none;
 }
 */
+#menustorage .navbar {
+  margin-bottom:0;/*kann sein dass es für fixed shadow benötigt wird*/
+}
 #menustorage .navbar-brand {
   float: left;
   display: inline-block;  
 }
-#menustorage .navbar-header span {
-  @media(max-width:767px){
-    font-size: 12px;
+@media(max-width:767px){
+  #menustorage .navbar-header span {
+      font-size: 12px;
   }
 }
 /*
@@ -132,7 +155,7 @@ ul.topnav li span {
   clear: left;
 }
 #content {
-  padding: 1em 0;
+  padding: 2em 0;
 }
 /*
 #sidebar {
@@ -183,7 +206,7 @@ ul.mainnav li.section {
   margin: 0 0 0 320px;
   padding: 15px;
   */
-  background-color: #F9F7ED;
+  /*background-color: #F9F7ED;*/
   /*text-align: justify;*//*removed ncm*/
 }
 #document table {
@@ -223,12 +246,14 @@ body.ui_light #document {
 #footer p.links a.link.last:after {
     content: "";
 }
+/*
 #footer div#socialshareprivacy {
   width: 540px;
   margin: 0 auto;
   text-align: left;
   color: #000000;
 }
+*/
 /* Fixes for Wiki */
 textarea[name="content"] {
   width: 99%;
@@ -268,6 +293,11 @@ textarea[name="content"] {
 .no-float {
   float:none;
 }
+/*damit content und sidebar ausgeglichen sind*/
+section#document h2:first-child, 
+section#document h3:first-child {
+    margin-top: 0;
+}
 #menustorage .navbar-nav li.lv3 > a:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -302,9 +332,55 @@ textarea[name="content"] {
 #document .videoblock .embed-responsive.withmargin {
   margin-bottom:20px;
 }
+#document .videoblock .videolistWrapper ul {
+  list-style:none;
+  padding-left: 15px;
+}
+#document .videoblock .videolistWrapper ul li {
+}
+#document .videoblock .videolistWrapper ul li a {
+  padding-left: 1em;
+  display: block;
+}
+#document .videoblock .videolistWrapper ul li a:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+
+  content: "\f1c8";/*fa-file-video-o*/
+
+  width: 1em;
+  margin-left: -1.25em;  
+  margin-right: 0;
+}
+#document #conferencedata {
+  text-align:center;
+}
+#document #conferencedata span.conference {
+  display: block;
+}
+
 
 article.news-entry {
     margin-bottom: 10px;
+}
+
+/*touchlinks benötigen mehr platz*/
+aside#sidebar a {
+    display: block;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    margin-bottom: 0.25em;
+}
+/*for floating elements*/
+section#document, 
+aside#sidebar {
+    margin-bottom: 50px;
+}
+footer#footer {
+    padding-bottom: 50px;
 }
 
 /*hier überschreiben damit orig script austauschbar bleibt*/
@@ -362,6 +438,16 @@ article.news-entry {
 .social_share_privacy .social_share_privacy_area li div.tweet,
 .social_share_privacy .social_share_privacy_area li div.gplusone {
   width:auto;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  aside#sidebar {
+    font-size: 0.8em;  
+  }  
+}
+@media (min-width: 992px) {
+  aside#sidebar {
+    font-size: 0.9em;  
+  }
 }
 /*
 ncm: menu - sm-devices 2 lines;
