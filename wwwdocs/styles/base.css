@@ -52,6 +52,10 @@ body.fixed-header #header { /*ncm*/
     margin: 0 auto;
     max-width: 940px;  
 }
+.h1, .h2, .h3, h1, h2, h3 { /*bootstrap überschreiben*/
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
 #logo {
   float: left;
   /*
@@ -295,8 +299,12 @@ textarea[name="content"] {
 }
 /*damit content und sidebar ausgeglichen sind*/
 section#document h2:first-child, 
-section#document h3:first-child {
+section#document h3:first-child,
+section#document h4:first-child {
     margin-top: 0;
+}
+#document article.a-sponsor {
+  margin-bottom:30px;
 }
 #menustorage .navbar-nav li.lv3 > a:before {
   font-family: FontAwesome;
@@ -355,10 +363,10 @@ section#document h3:first-child {
   margin-left: -1.25em;  
   margin-right: 0;
 }
-#document #conferencedata {
+#document .conferencedata {
   text-align:center;
 }
-#document #conferencedata span.conference {
+#document .conferencedata span.conference {
   display: block;
 }
 
@@ -416,7 +424,8 @@ footer#footer {
   width: 104px !important;  
 }
 .social_share_privacy .social_share_privacy_area li.gplus {
-  width: 68px !important; 
+  width: 68px !important;
+  padding-right: 0 !important; 
 }
 .social_share_privacy .social_share_privacy_area li.settings_info {
   padding-right: 0 !important;
@@ -424,7 +433,6 @@ footer#footer {
   width: auto;
   top: 8px;
   width: 100%;
-  background: yellow;
   display: block;
   height: 21px;
 }
