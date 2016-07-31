@@ -124,7 +124,7 @@
 
         <!--ncmstart--><!--id:otherworkshops-->
         <section id="archivnav" class="elemWrapper archivWrapper ncm">
-          <h2><t><de>Archiv</de><en>Archive</en></t></h2>  
+          <h2><t><de>gpw-Archiv</de><en>Archive of gpw</en></t></h2>  
           <form id="archiv_form" action="#">  
             <fieldset class="form-group"><!--style="display: inline-block;float: right;"-->
               <label for="archiv"><t><de>Workshop</de><en>Conference</en></t>:</label>    
@@ -199,9 +199,9 @@
 
 
     <footer id="footer">
-      <p>
-        <a href="impressum.html"><t><de>Impressum</de><en>Imprint</en></t></a> |
-        <a href="mailto:orga-gpw2017@list.cluster-team.com" class="email icon-envelope">orga-gpw2017@list.cluster-team.com</a>
+      <p class="links">
+        <a class="link first" href="impressum.html"><t><de>Impressum</de><en>Imprint</en></t></a> |
+        <a class="link last email icon-envelope" href="mailto:orga-gpw2017@list.cluster-team.com" title="<t><de>Kontakt</de><en>Contact</en></t>">orga-gpw2017@list.cluster-team.com</a>
       </p>
     </footer>
 		<script type="text/javascript">
