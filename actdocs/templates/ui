@@ -26,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="styles/oldcolors.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><!--ncm-->
 
-  <body>
+  <body class="no-fixed-header">
   
     <header id="header" class="block rowx">
       <div class="headerContent">
