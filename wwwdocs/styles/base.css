@@ -6,13 +6,24 @@ html {
 }
 body {
   max-width:940px;/*width: 940px;*//*ncm*/
-  margin: 1em auto;
+  margin: 0 auto 1em auto;/*ncm*/
   padding: 50px 0 0 0;/*padding: 20px;*//*ncm*/
   background-color: #FFFFFF;
 }
 #header {
   color: #FFFFFF;
   background-color: #333366;
+}
+#header.fixed { /*ncm*/
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    z-index: 1030;
+
+    margin: 0 auto;
+    max-width: 940px;  
 }
 #logo {
   float: left;
