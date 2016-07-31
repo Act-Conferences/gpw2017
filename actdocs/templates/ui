@@ -23,7 +23,7 @@
   	<!--removed because included in bootstrap <link rel="stylesheet" type="text/css" href="styles/normalize.css">-->
   	<!--endncm-->
     <link rel="stylesheet" type="text/css" href="styles/base.css">
-    <link rel="stylesheet" type="text/css" href="styles/oldcolors.css">
+    <!--<link rel="stylesheet" type="text/css" href="styles/oldcolors.css">-->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><!--ncm-->
   </head>
 
@@ -116,6 +116,8 @@
 
       <section id="document" class="col-sm-9 col-md-8">
         [% content %]
+
+         <div id="socialshareprivacy"></div>
       </section>
 
       <aside id="sidebar" class="col-sm-3 col-md-4">
@@ -199,9 +201,8 @@
     <footer id="footer">
       <p>
         <a href="impressum.html"><t><de>Impressum</de><en>Imprint</en></t></a> |
-        <a href="mailto:orga-gpw2016@list.cluster-team.com">orga-gpw2016@list.cluster-team.com</a>
+        <a href="mailto:orga-gpw2017@list.cluster-team.com" class="email icon-envelope">orga-gpw2017@list.cluster-team.com</a>
       </p>
-      <div id="socialshareprivacy"></div>
     </footer>
 		<script type="text/javascript">
 			var lang_iso = '<t><de>de_DE</de><en>en_US</en></t>';
