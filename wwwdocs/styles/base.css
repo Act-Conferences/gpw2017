@@ -200,11 +200,28 @@ body.ui_light #document {
   padding: 1px;
   text-align: center;
   color: #FFFFFF;
-  background-color: #36393D;
+  /*background-color: #36393D;*/
+  background-color: #333366;/*gpwblue*/
 }
 #footer a:link,
 #footer a:visited {
   color: #FFFFFF;
+}
+#footer p.links {
+  padding: 10px 0 0 0;
+}
+#footer p.links a.link {
+    display: inline-block;
+    padding: 5px;
+}
+#footer p.links a.link:after {
+    content: "|";
+    display: inline-block;
+    width: 1em;
+    margin-left: 1em;
+}
+#footer p.links a.link.last:after {
+    content: "";
 }
 #footer div#socialshareprivacy {
   width: 540px;
@@ -224,9 +241,20 @@ textarea[name="content"] {
 #header .headerContent a.homelink {
   display:block;
 }
+#header .headerContent a.homelink:hover #logo,
+#header .headerContent a.homelink:focus #logo {
+    opacity: 0.8;
+}
+#header .headerContent a.homelink:hover h1,
+#header .headerContent a.homelink:focus h1 {
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
 .archivWrapper form {
   text-align:right;
   padding: 7px;
+}
+.archivWrapper form .form-group {
+    margin-bottom: 0;
 }
 .archivWrapper select.form-control {
   display: inline-block;
@@ -271,6 +299,13 @@ textarea[name="content"] {
   margin-right:0.25em;
 } 
 /*i:after{ content: '\2022';}*/
+#document .videoblock .embed-responsive.withmargin {
+  margin-bottom:20px;
+}
+
+article.news-entry {
+    margin-bottom: 10px;
+}
 
 /*hier überschreiben damit orig script austauschbar bleibt*/
 .social_share_privacy {
