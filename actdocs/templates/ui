@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="[% global.request.language %]">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no"> 
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <base href="[% make_uri('') %]" target="_top">
     <title>[% global.conference.name %]</title>
     <meta name="description"      content="<t><de>Der Deutsche Perl-Workshop ist eine jährlich in Deutschland stattfindende Konferenz von und für Entwickler der Programmiersprache Perl.</de><en>The German Perl Workshop is a conference about the Perl Programming Language. It is organized by Perl developers.</en></t>">
@@ -10,9 +12,8 @@
     <meta name="application-name" content="ACT GPW2017">
     <meta name="author"           content="Erlangen.pm, Perleone">
     <meta name="generator"        content="act.yapc.eu">
-  	<!--startncm-->
-  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
-  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
   	<!-- Latest compiled and minified CSS -->
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   	<!-- Optional theme -->
@@ -25,11 +26,19 @@
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <!--<link rel="stylesheet" type="text/css" href="styles/oldcolors.css">-->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><!--ncm-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->    
   </head>
 
 
   <body class="no-fixed-header">
-  
+
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
     <header id="header" class="block rowx">
       <div class="headerContent col-xs-12 no-float">
         <a class="homelink clearfixafter" href="index.html" title="[% global.conference.name %]">
@@ -117,7 +126,7 @@
       <section id="document" class="col-sm-9 col-md-8">
         [% content %]
 
-         <div id="socialshareprivacy"></div>
+         <div id="socialshareprivacy" class="social_share_privacy"></div>
       </section>
 
       <aside id="sidebar" class="col-sm-3 col-md-4">
@@ -200,7 +209,7 @@
 
     <footer id="footer">
       <p class="links">
-        <a class="link first" href="impressum.html"><t><de>Impressum</de><en>Imprint</en></t></a> |
+        <a class="link first" href="impressum.html"><t><de>Impressum</de><en>Imprint</en></t></a>
         <a class="link last email icon-envelope" href="mailto:orga-gpw2017@list.cluster-team.com" title="<t><de>Kontakt</de><en>Contact</en></t>">orga-gpw2017@list.cluster-team.com</a>
       </p>
     </footer>
