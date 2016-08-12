@@ -61,19 +61,17 @@
 </ul>
 [% END %]
 [% IF global.request.user.has_registered %]
-<form method="POST" action="[% make_uri('updatemytalks') %]" />
-<label><input type="checkbox"
-       name="mt-[% talk_id %]"
-       value="[% talk_id %]"
-       title = "<t><de>Teilnahmeinteresse bekunden</de><en>Interest in attending</en></t>"
+<form method="POST" action="[% make_uri('updatemytalks') %]" class="form-inline separated">
+  <div class="form-group">
+    <input type="checkbox" name="mt-[% talk_id %]" id="mt-[% talk_id %]" value="[% talk_id %]" title="<t><de>Teilnahmeinteresse bekunden</de><en>Interest in attending</en></t>" 
        [% IF global.request.user.is_my_talk(talk_id) %]
          checked = "checked"
-       [% END %]
-/>
-<span id="my-[% talk_id %]-text"><t><de>Teilnahmeinteresse bekunden</de><en>Interest in attending</en></t></span>
-</label>
-<input type="hidden" name="talk_id" value="[% talk_id %]" />
-<input type="submit" class="mytalks_submit" value="{{Submit}}" />
+       [% END %]    
+     class="form-control">
+    <label for="mt-[% talk_id %]" class="control-label"><span id="my-[% talk_id %]-text"><t><de>Teilnahmeinteresse bekunden</de><en>Interest in attending</en></t></span></label>
+    <input type="hidden" name="talk_id" value="[% talk_id %]">
+  </div>
+  <input type="submit" class="mytalks_submit btn btn-primary" value="{{Submit}}">
 </form>
 [% END %]
 </article>
