@@ -47,6 +47,7 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
+ 
   /*
   //stylechooser removed by ncm:
   
@@ -83,21 +84,63 @@ $(document).ready(function(){
 
 
     //nav fixed to top
+     
     $(window).bind('scroll', function() {
-      var navHeight = $(window).height() - 70;
-      var stickyNavTop = $('#navtop').offset().top;
-      console.log('navHeight: '+navHeight + '   scrollTop: '+$(window).scrollTop()+'   stickyNavTop: '+stickyNavTop);
-      if ($(window).scrollTop() > navHeight) {
-          $('body').removeClass('no-fixed-header');
-          $('body').addClass('fixed-header');
-          console.log('fixed');
-      }
-      else {
+      var global_stickyNavTop = 100;//$('#navtop').offset().top; 
+      var windowScrollTop = $(window).scrollTop();
+      //var navHeight = $(window).height() - 70;
+      var stickyNavTop = 200;//global_stickyNavTop;
+      var bodyIsAlreadyFixed = $('body').hasClass('fixed-header');
+      console.log('scrollTop: '+windowScrollTop+'   stickyNavTop: '+stickyNavTop + '|else:' + global_stickyNavTop);
+      if (bodyIsAlreadyFixed) { //fixed on top
+        if (windowScrollTop <= stickyNavTop) {
+          /*
           $('body').removeClass('fixed-header');
           $('body').addClass('no-fixed-header');
+          $('#header').removeClass('fixed');
+          $('#navtop').removeClass('navbar-fixed-top');
           console.log('not fixed');
+          */
+        }
+        else {
+
+        }
       }
+      else {
+        if (windowScrollTop > stickyNavTop) {
+          $('body').removeClass('no-fixed-header');
+          $('body').addClass('fixed-header');
+          $('#header').addClass('fixed');
+          $('#navtop').addClass('navbar-fixed-top');
+          console.log('fixed');
+        }
+        else {
+          
+        }        
+      }
+/*
+      if (!bodyIsAlreadyFixed && (windowScrollTop > stickyNavTop)) {
+
+          $('body').removeClass('no-fixed-header');
+          $('body').addClass('fixed-header');
+          $('#header').addClass('fixed');
+          $('#navtop').addClass('navbar-fixed-top');
+          console.log('fixed');
+
+      }
+      else {
+
+          $('body').removeClass('fixed-header');
+          $('body').addClass('no-fixed-header');
+          $('#header').removeClass('fixed');
+          $('#navtop').removeClass('navbar-fixed-top');
+          console.log('not fixed');
+
+      }
+*/      
     });
+
+
 
   //ncmende
 
