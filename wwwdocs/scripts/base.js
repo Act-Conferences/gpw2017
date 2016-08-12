@@ -86,21 +86,19 @@ $(document).ready(function(){
     //nav fixed to top
      
     $(window).bind('scroll', function() {
-      var global_stickyNavTop = 100;//$('#navtop').offset().top; 
+      var global_stickyNavTop = 105;//$('#navtop').offset().top; 
       var windowScrollTop = $(window).scrollTop();
       //var navHeight = $(window).height() - 70;
-      var stickyNavTop = 200;//global_stickyNavTop;
+      var stickyNavTop = global_stickyNavTop;//global_stickyNavTop;
       var bodyIsAlreadyFixed = $('body').hasClass('fixed-header');
       console.log('scrollTop: '+windowScrollTop+'   stickyNavTop: '+stickyNavTop + '|else:' + global_stickyNavTop);
       if (bodyIsAlreadyFixed) { //fixed on top
         if (windowScrollTop <= stickyNavTop) {
-          /*
           $('body').removeClass('fixed-header');
           $('body').addClass('no-fixed-header');
           $('#header').removeClass('fixed');
           $('#navtop').removeClass('navbar-fixed-top');
           console.log('not fixed');
-          */
         }
         else {
 
