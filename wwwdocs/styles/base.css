@@ -742,3 +742,18 @@ body.fixed-header #header .headerContent {
       right: -3000px; 
   }
 }
+
+/****************
+Fragen / todos
+*) Wie per Template-Script Sprachwechsellink generieren (akt URL & parameter &language=de oder en)?
+*) Wo ist die Einloggen-Seite bzw. das Login-Formular? http://test.mongueurs.net/gpw2017/main
+*) Wo ist die Vortrag-Einreichen Seite (mit Formular)? http://test.mongueurs.net/gpw2017/newtalk
+*) Wo ist das Passwort-Vergessen-Formular? http://test.mongueurs.net/gpw2017/changepwd
+*) Wo ist das Formular Teilnehmer-Suche? http://test.mongueurs.net/gpw2017/search
+*) Wo ist die Tabelle Teilnehmerstatistik? http://test.mongueurs.net/gpw2017/stats
+*) Wo wird die Vorträge-Tabelle generiert? http://test.mongueurs.net/gpw2017/talks
+*) Wo wird die Favorite-Vorträge-Tabelle generiert? http://test.mongueurs.net/gpw2017/favtalks
+*) Wo wird die User-Bio-Tabelle generiert? siehe http://act.yapc.eu/gpw2016/user/1275
+*) Wo wird die Programm-Tabelle generiert? siehe http://act.yapc.eu/gpw2016/schedule
+*) Todo Tabelle preise.html umbauen responsive
+*****************/
