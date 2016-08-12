@@ -25,7 +25,7 @@
                     <t><de>Workshop</de><en>Conference</en></t> <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="index.html"><t><de>Start</de><en>Home</en></t> [% global.conference.name %]</a></li>
+                    <!--<li><a href="index.html"><t><de>Start</de><en>Home</en></t> [% global.conference.name %]</a></li>-->
                     
                     <li><a href="venue.html"><t><de>Veranstaltungsort</de><en>Venue</en></t></a></li>
 
