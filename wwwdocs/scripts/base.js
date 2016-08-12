@@ -85,7 +85,8 @@ $(document).ready(function(){
     //nav fixed to top
     $(window).bind('scroll', function() {
       var navHeight = $(window).height() - 70;
-      console.log('navHeigt: '+navHeight);
+      var stickyNavTop = $('#navtop').offset().top;
+      console.log('navHeight: '+navHeight + '   scrollTop: '+$(window).scrollTop()+'   stickyNavTop: '+stickyNavTop);
       if ($(window).scrollTop() > navHeight) {
           $('body').removeClass('no-fixed-header');
           $('body').addClass('fixed-header');
