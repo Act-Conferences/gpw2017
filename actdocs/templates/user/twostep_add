@@ -23,22 +23,30 @@
 <form method="POST" action="[% global.request.r.uri %]" class="form-inline separated">
     <div class="form-group">
         <label class="sr-only" for="email">{{Email}}</label>
-        <input type="email" name="email" id="email" value="[% email %]" size="25" maxlength="256" class="form-control" placeholder="{{Email}}"/>
+        <input type="email" name="email" id="email" value="[% email %]" size="25" maxlength="256" class="form-control" placeholder="<t><de>Bitte E-Mail-Adresse eingeben</de><en>Pleaser enter your email address</en></t>"/>
     </div>
-    <input type="submit" name="twostepsubmit" class="btn btn-primary" value="OK" />
+    <input type="submit" name="twostepsubmit" class="btn btn-primary" value="<t><de>Registrieren</de><en>Register</en></t>" />
 </form>
 <p>
     <t>
         <de>
             Nach der Eingabe Ihrer E-Mail Adresse erhalten Sie eine E-Mail mit einem Link, über den Sie zur Registrierung gelangen.
             Dort können Sie dann Ihre weiteren Daten eingeben.
+        </de>
+        <en>
+            After entering your email address you will receive an email with a link that allows you to access the registration.
+            At the registration page you can enter further information.
+        </en>
+    </t>
+</p>
+<p>
+    <t>
+        <de>
             Als nächsten Schritt müssen Sie dann die (Pseudo)-Bezahlung durchführen.
             Dort wählen Sie Ihren Teilnahmebeitrag und bezahlen.
             Downloaden Sie Ihre Rechnung und überweisen Sie den Betrag mit den dort angegebenen Bankdaten.
         </de>
         <en>
-            After entering your email address you will receive an email with a link that allows you to access the registration.
-            At the registration page you can enter further information.
             Afterwards you have to process a Pseudo-Payment-Step.
             At this point you can choose your entry fee.
             Then download your invoice, read the bank transfer data and pay.
