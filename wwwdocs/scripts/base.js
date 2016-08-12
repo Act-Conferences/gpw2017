@@ -81,11 +81,29 @@ $(document).ready(function(){
     });
   //});
 
+
+    //nav fixed to top
+    $(window).bind('scroll', function() {
+      var navHeight = $(window).height() - 70;
+      console.log('navHeigt: '+navHeight);
+      if ($(window).scrollTop() > navHeight) {
+          $('body').removeClass('no-fixed-header');
+          $('body').addClass('fixed-header');
+          console.log('fixed');
+      }
+      else {
+          $('body').removeClass('fixed-header');
+          $('body').addClass('no-fixed-header');
+          console.log('not fixed');
+      }
+    });
+
   //ncmende
 
 });
-
+/*
 $(window).scroll(function(){
     //$("#navtop").css("top",Math.max(0,250-$(this).scrollTop()));
-    console.log($("#navtop").scrollTop());
+    console.log($('#navtop').scrollTop());
 });
+*/
