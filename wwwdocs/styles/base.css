@@ -693,3 +693,35 @@ fast-weiss #ddd
         color: #fff;/*weiss*//*yellow;*/
     }
 }
+
+/*fixierte navigation- ebenso body.fixed-header und somit #header .headerContent : display:none; transition; */
+#header {
+  /*
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+  */  
+    /* For Safari 3.1 to 6.0 */
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+    -webkit-transition-delay: 0.5s;
+    /* Standard syntax */
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0.5s;  
+}
+body.fixed-header #header {
+    margin-top: 52px; 
+}
+body.fixed-header #header .headerContent {
+    display:none; 
+}
+
+#header.fixed #menustorage .navbar-default.navbar-fixed-top {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
