@@ -20,7 +20,7 @@
         </en>
     </t>
 </p>
-<--
+
 <form method="POST" action="[% global.request.r.uri %]">
     <table border="1" cellpadding="10" cellspacing="0"><tr><td>
         <table border="0" cellpadding="0" cellspacing="10">
@@ -39,14 +39,8 @@
         </table>
     </td></tr></table>
 </form>
--->
-<form method="POST" action="[% global.request.r.uri %]" class="form-inline">
-    <div class="form-group">
-        <label class="sr-only" for="email">{{Email}}</label>
-        <input type="email" name="email" id="email" value="[% email %]" size="25" maxlength="256" class="form-control" placeholder="{{Email}}"/>
-    </div>
-    <input type="submit" name="twostepsubmit" class="btn btn-primary" value="OK" />
-</form>
+
+
 <p>
     <t>
         <de>
