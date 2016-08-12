@@ -1,13 +1,4 @@
 [% WRAPPER ui title = loc("Confirmation required") %]
-<!--
-    <p>{{This operation requires a confirmation. Please enter your email address,}}</p>
--->
-[% PROCESS error
-    msgs = {
-        ERR_EMAIL        => loc("You must enter your email"),
-        ERR_EMAIL_SYNTAX => loc("Your email address looks bogus."),
-    }
-%]
 <p>
     <t>
         <de>
@@ -20,6 +11,15 @@
         </en>
     </t>
 </p>
+<!--
+    <p>{{This operation requires a confirmation. Please enter your email address,}}</p>
+-->
+[% PROCESS error
+    msgs = {
+        ERR_EMAIL        => loc("You must enter your email"),
+        ERR_EMAIL_SYNTAX => loc("Your email address looks bogus."),
+    }
+%]
 <form method="POST" action="[% global.request.r.uri %]" class="form-inline separated">
     <div class="form-group">
         <label class="sr-only" for="email">{{Email}}</label>
