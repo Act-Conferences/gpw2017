@@ -91,14 +91,14 @@ $(document).ready(function(){
       //var navHeight = $(window).height() - 70;
       var stickyNavTop = global_stickyNavTop;//global_stickyNavTop;
       var bodyIsAlreadyFixed = $('body').hasClass('fixed-header');
-      console.log('scrollTop: '+windowScrollTop+'   stickyNavTop: '+stickyNavTop + '|else:' + global_stickyNavTop);
+      //console.log('scrollTop: '+windowScrollTop+'   stickyNavTop: '+stickyNavTop + '|else:' + global_stickyNavTop);
       if (bodyIsAlreadyFixed) { //fixed on top
         if (windowScrollTop <= stickyNavTop) {
           $('body').removeClass('fixed-header');
           $('body').addClass('no-fixed-header');
           $('#header').removeClass('fixed');
           $('#navtop').removeClass('navbar-fixed-top');
-          console.log('not fixed');
+          //console.log('not fixed');
         }
         else {
 
@@ -110,7 +110,7 @@ $(document).ready(function(){
           $('body').addClass('fixed-header');
           $('#header').addClass('fixed');
           $('#navtop').addClass('navbar-fixed-top');
-          console.log('fixed');
+          //console.log('fixed');
         }
         else {
           
