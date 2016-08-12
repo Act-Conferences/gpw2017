@@ -458,8 +458,8 @@ footer#footer {
   font-weight:bold;
 }
 form.separated {
-  margin-top:15px;
-  margin-bottom:15px;
+  margin-top:25px;
+  margin-bottom:25px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   aside#sidebar {
@@ -724,4 +724,21 @@ body.fixed-header #header .headerContent {
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
+}
+@media(min-width:992px){
+  #header.fixed #menustorage .navbar-default.navbar-fixed-top:before,
+  #header.fixed #menustorage .navbar-default.navbar-fixed-top:after {
+      background: #333366;/*gpwblue*/
+      height: 50px;
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 3000px;
+  }
+  #header.fixed #menustorage .navbar-default.navbar-fixed-top:before {
+      left: -3000px;
+  }
+  #header.fixed #menustorage .navbar-default.navbar-fixed-top:after {
+      right: -3000px; 
+  }
 }
