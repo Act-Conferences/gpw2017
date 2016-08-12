@@ -212,6 +212,12 @@ ul.mainnav li.section {
   */
   /*background-color: #F9F7ED;*/
   /*text-align: justify;*//*removed ncm*/
+  
+}
+@media(min-width:768px){
+  #document {
+    padding-left:30px;
+  }
 }
 #document table {
   text-align: left;
@@ -446,6 +452,14 @@ footer#footer {
 .social_share_privacy .social_share_privacy_area li div.tweet,
 .social_share_privacy .social_share_privacy_area li div.gplusone {
   width:auto;
+}
+.error {
+  color:red;
+  font-weight:bold;
+}
+form.separated {
+  margin-top:15px;
+  margin-bottom:15px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   aside#sidebar {
