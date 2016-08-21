@@ -599,6 +599,7 @@ fast-weiss #ddd
 #menustorage .navbar-inverse.gpw {
     background-color: #333366;/*gpwblue*/
     border-color: #232343;/*gpwbluemediumdark*/
+    z-index:1005;/*wegen openstreet map controls*/
 }
 /* title */
 #menustorage .navbar-inverse.gpw .navbar-brand,
@@ -747,17 +748,36 @@ body.fixed-header #header .headerContent {
   }
 }
 
+
+
+
+
+
+form.form_addTalk {
+}
+form.form_addTalk a.talkTitle {
+  text-align:center;
+}
+.nobr {
+  white-space: nowrap;
+}
+div.control-label {
+    font-weight: bold;
+}
 /****************
 Fragen / todos
-*) Wie per Template-Script Sprachwechsellink generieren (akt URL & parameter &language=de oder en)?
-*) Wo ist die Einloggen-Seite bzw. das Login-Formular? http://test.mongueurs.net/gpw2017/main
-*) Wo ist die Vortrag-Einreichen Seite (mit Formular)? http://test.mongueurs.net/gpw2017/newtalk
-*) Wo ist das Passwort-Vergessen-Formular? http://test.mongueurs.net/gpw2017/changepwd
-*) Wo ist das Formular Teilnehmer-Suche? http://test.mongueurs.net/gpw2017/search
-*) Wo ist die Tabelle Teilnehmerstatistik? http://test.mongueurs.net/gpw2017/stats
-*) Wo wird die Vorträge-Tabelle generiert? http://test.mongueurs.net/gpw2017/talks
-*) Wo wird die Favorite-Vorträge-Tabelle generiert? http://test.mongueurs.net/gpw2017/favtalks
-*) Wo wird die User-Bio-Tabelle generiert? siehe http://act.yapc.eu/gpw2016/user/1275
-*) Wo wird die Programm-Tabelle generiert? siehe http://act.yapc.eu/gpw2016/schedule
+01.) Wie kann ich per Template-Script den Sprachwechsellink generieren (aktuelle URL & parameter: &language=de oder en)?
+02.) Wo ist das Template für die Einloggen-Seite bzw. das Login-Formular? http://test.mongueurs.net/gpw2017/main
+03.) Wo ist die Vortrag-Einreichen Seite (mit Formular)? http://test.mongueurs.net/gpw2017/newtalk
+04.) Wo ist das Passwort-Vergessen-Formular? http://test.mongueurs.net/gpw2017/changepwd
+05.) Wo ist das Formular für die Teilnehmer-Suche? http://test.mongueurs.net/gpw2017/search
+06.) Wo ist die Tabelle Teilnehmerstatistik? http://test.mongueurs.net/gpw2017/stats
+07.) Wo wird die Vorträge-Tabelle generiert? http://test.mongueurs.net/gpw2017/talks
+08.) Wo wird die Favorite-Vorträge-Tabelle generiert? http://test.mongueurs.net/gpw2017/favtalks
+09.) Wo wird die User-Bio-Tabelle generiert? siehe http://act.yapc.eu/gpw2016/user/1275
+10.) Wo wird die Programm-Tabelle generiert? siehe http://act.yapc.eu/gpw2016/schedule
 *) Todo Tabelle preise.html umbauen responsive
+ --templates/talk/add
+ --templates/talk/list
+ --templates/talk/favorites
 *****************/
