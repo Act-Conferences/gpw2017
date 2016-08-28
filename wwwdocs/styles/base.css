@@ -423,6 +423,10 @@ footer#footer {
   width: 33% !important;/*width: auto;*/
   padding-right: 15px !important;
 }
+  .social_share_privacy .social_share_privacy_area li.help_info.display .info, 
+  .social_share_privacy .social_share_privacy_area li .help_info.icon.display .info {
+      z-index:1100;
+  }
 .social_share_privacy .social_share_privacy_area li.facebook {
   width: 132px !important;  
 }
@@ -442,13 +446,13 @@ footer#footer {
   display: block;
   height: 21px;
 }
-.social_share_privacy .social_share_privacy_area li.settings_info .settings_info_menu {
-  width: 100%;
-  min-width:135px;
-  max-width: 400px;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
+  .social_share_privacy .social_share_privacy_area li.settings_info .settings_info_menu {
+    width: 100%;
+    min-width:135px;
+    max-width: 400px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 .social_share_privacy .social_share_privacy_area li div.tweet,
 .social_share_privacy .social_share_privacy_area li div.gplusone {
   width:auto;
@@ -764,6 +768,14 @@ form.form_addTalk a.talkTitle {
 div.control-label {
     font-weight: bold;
 }
+
+table.schedule-2 tr.header td a {
+  display:block;
+}
+table.schedule-2 tr.header td .star-count {
+  display: inline-block;
+  margin-left: 10px;
+}
 /****************
 Fragen / todos:;
 01.) Wie kann ich per Template-Script den Sprachwechsellink generieren (aktuelle URL & parameter: &language=de oder en)?
@@ -775,9 +787,12 @@ Fragen / todos:;
 07.) Wo wird die Vorträge-Tabelle generiert? http://test.mongueurs.net/gpw2017/talks
 08.) Wo wird die Favorite-Vorträge-Tabelle generiert? http://test.mongueurs.net/gpw2017/favtalks
 09.) Wo wird die User-Bio-Tabelle generiert? siehe http://act.yapc.eu/gpw2016/user/1275
-10.) Wo wird die Programm-Tabelle generiert? siehe http://act.yapc.eu/gpw2016/schedule
+10.) OK? Wo wird die Programm-Tabelle generiert? siehe http://act.yapc.eu/gpw2016/schedule
 *) Todo Tabelle preise.html umbauen responsive
  --templates/talk/add
  --templates/talk/list
  --templates/talk/favorites
+*) Todo Registrierform: http://test.mongueurs.net/gpw2017/register/7cb9f7ebe73aa62b....
+*) Todo/Frage: Kann ich nach Login beliebig Vorträge anlegen zum Testen?;
+*) Todo: wenn user eingeloggt muss oben im menü statt registrieren KONTO und statt login LOGOUT stehen;
 *****************/
