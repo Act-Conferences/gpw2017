@@ -50,7 +50,7 @@
 
 <hr>
 
-<p>Tags: [% showtags(tags, 'talks') %]</p>
+<p>{{Tags}}: [% showtags(tags, 'talks') %]</p>
 
 [% IF attendees.size %]
 <p><t><de>Teilnahmeinteresse</de><en>Interest in attending</en></t>:</p>
