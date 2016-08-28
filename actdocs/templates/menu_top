@@ -116,6 +116,11 @@
             <li class="langchanger lv1"><!--todo:languagechanger link via perl-->
                 <a href="?<t><de>language=en</de><en>language=de</en></t>"><span class="glyphicon glyphicon-flag"></span> <t><de>EN</de><en>DE</en></t></a>
             </li>
+            [% IF global.request.user.has_registered %]
+                <!--test:user eingeloggt-->
+            [% ELSE %] 
+                <!--test:user ausgeloggt-->   
+            [% END %]
         </ul>
     </div>
 </div>    
