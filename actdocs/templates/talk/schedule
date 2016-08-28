@@ -74,7 +74,7 @@
 
 [%-# schedule %]
 [% IF global.request.user.has_registered %]
-<form method="POST" action="[% make_uri('updatemytalks') %]" />
+<form method="POST" action="[% make_uri('updatemytalks') %]" class="form_talkupdate />
 [% END %]
 [% d = day %]
 <h2>[% date_format(d.replace('$', ' 00:00:00' ), 'date_full') | ucfirst %]</h2>
