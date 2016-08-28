@@ -50,7 +50,7 @@
 
 <hr>
 
-<p>{{Tags}}: [% showtags(tags, 'talks') %]</p>
+<p><!--{{Tags}}: -->[% showtags(tags, 'talks') %]</p>
 
 [% IF attendees.size %]
 <p><t><de>Teilnahmeinteresse</de><en>Interest in attending</en></t>:</p>
@@ -61,7 +61,7 @@
 </ul>
 [% END %]
 [% IF global.request.user.has_registered %]
-<form method="POST" action="[% make_uri('updatemytalks') %]" class="form-inline separated">
+<form method="POST" action="[% make_uri('updatemytalks') %]" class="form-inline separated form_talkupdate form_teilnahmeinteresse">
   <div class="form-group">
     <input type="checkbox" name="mt-[% talk_id %]" id="mt-[% talk_id %]" value="[% talk_id %]" title="<t><de>Teilnahmeinteresse bekunden</de><en>Interest in attending</en></t>" 
        [% IF global.request.user.is_my_talk(talk_id) %]
