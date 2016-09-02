@@ -2,7 +2,7 @@
    ELSE;   title = loc("List of talks");
    END;
    WRAPPER ui title = title %]
-<h2>Test ReneeB {{title}}</h2>
+<h2>Test ReneeB: [% title %]</h2>
 <div align="center">
 <p>
  [% IF talks_total == 0 %]
