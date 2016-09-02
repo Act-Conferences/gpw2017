@@ -108,22 +108,26 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li class="register lv1">
-                <a href="[% make_uri('register') %]"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                    [% IF global.request.user.has_registered %]
-                         <t><de>Profil</de><en>Profile</en></t>
-                    [% ELSE %] 
-                         <t><de>Registrieren</de><en>Sign Up</en></t>   
-                    [% END %]                  
-                </a>
+                [% IF global.request.user.has_registered %]
+                    <a href="[% make_uri('main') %]"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                     <t><de>Profil</de><en>Profile</en></t>
+                    </a>                
+                [% ELSE %] 
+                    <a href="[% make_uri('register') %]"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                     <t><de>Registrieren</de><en>Sign Up</en></t>
+                    </a>   
+                [% END %]
             </li>
             <li class="login lv1">
-                <a href="[% make_uri('main') %]"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
-                    [% IF global.request.user.has_registered %]
-                         <t><de>Logout</de><en>Log out</en></t>
-                    [% ELSE %] 
-                         <t><de>Login</de><en>Log in</en></t>   
-                    [% END %]                
-                </a>
+                [% IF global.request.user.has_registered %]
+                    <a href="[% make_uri('logout') %]"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                     t><de>Logout</de><en>Log out</en></t>
+                    </a>                
+                [% ELSE %] 
+                    <a href="[% make_uri('main') %]"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                     <t><de>Login</de><en>Log in</en></t>
+                    </a>   
+                [% END %]
             </li>
             <li class="langchanger lv1"><!--todo:languagechanger link via perl-->
                 <a href="?<t><de>language=en</de><en>language=de</en></t>"><span class="glyphicon glyphicon-flag"></span> <t><de>EN</de><en>DE</en></t></a>
