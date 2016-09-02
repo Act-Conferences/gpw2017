@@ -20,7 +20,7 @@
             <td><b itemprop="summary">[% event.title %]</b>
                   <i></i>
                   [% IF global.config.talks_languages && global.config.talks_languages.${event.lang} %]
-                  <br>[% global.config.talks_languages.${event.lang} %]
+                  <br />[% global.config.talks_languages.${event.lang} %]
                   [% END %]
                   [% IF event.user %]
                     <br />{{by}} [% user_info_base(event.user) %]
