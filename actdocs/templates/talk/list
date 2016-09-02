@@ -2,37 +2,42 @@
    ELSE;   title = loc("List of talks");
    END;
    WRAPPER ui title = title %]
-<h2>Test ReneeB: [% title %]</h2>
+<h2>Test ReneeB</h2>
 <div align="center">
-<p>
- [% IF talks_total == 0 %]
- {{No talk was submitted yet.}}
- [% ELSE %]
- {{Submitted talks:}} [% talks_total %]<br />
- {{Accepted talks:}} [% talks_accepted %]
- [% END %]
-</p>
-[% IF global.request.user.is_talks_admin || global.request.user.has_talk %]
-<p>
- {{Accepted talks are shown in bold type.}}
-</p>
-[% END %]
-[% IF global.request.user.is_talks_admin %]
-<p>
- {{Total duration of accepted talks:}}
- [% talks_duration div 60 %] {{hours}}
- [% talks_duration % 60 %] {{minutes}}
- <br />
- {{Accepted lightning talks:}}
- [% talks_lightning %]
-</p>
-[% END %]
+  <p>
+   [% IF talks_total == 0 %]
+   {{No talk was submitted yet.}}
+   [% ELSE %]
+   {{Submitted talks:}} [% talks_total %]<br />
+   {{Accepted talks:}} [% talks_accepted %]
+   [% END %]
+  </p>
+
+  [% IF global.request.user.is_talks_admin || global.request.user.has_talk %]
+    <p>
+     {{Accepted talks are shown in bold type.}}
+    </p>
+  [% END %]
+
+  [% IF global.request.user.is_talks_admin %]
+    <p>
+     {{Total duration of accepted talks:}}
+     [% talks_duration div 60 %] {{hours}}
+     [% talks_duration % 60 %] {{minutes}}
+     <br />
+     {{Accepted lightning talks:}}
+     [% talks_lightning %]
+    </p>
+  [% END %]
 </div>
 
 [% IF !tag AND tagcloud %]
-  <h2>{{Tags}}</h2>
+  <h3>{{Tags}}</h3>
   [% tagcloud %]
   <br />
+[% ELSE %]
+  <h3>{{Tags}}</h3>
+  <a href="[% make_uri('talks') %]"><t><de>Alle Vorträge anzeigen</de><en>Show all talks</en></t></a>
 [% END %]
 
 [% IF tracks.size;
