@@ -36,8 +36,10 @@
   [% tagcloud %]
   <br />
 [% ELSE %]
+  [% IF global.request.user.has_registered %]
   <h3>{{Tags}}</h3>
   <a href="[% make_uri('talks') %]"><t><de>Alle Vorträge anzeigen</de><en>Show all talks</en></t></a>
+  [% END %]
 [% END %]
 
 [% IF tracks.size;
