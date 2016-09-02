@@ -121,7 +121,7 @@
             <li class="login lv1">
                 [% IF global.request.user.has_registered %]
                     <a href="[% make_uri('logout') %]"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
-                     t><de>Logout</de><en>Log out</en></t>
+                     <t><de>Logout</de><en>Log out</en></t>
                     </a>                
                 [% ELSE %] 
                     <a href="[% make_uri('main') %]"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
