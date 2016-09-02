@@ -4,15 +4,11 @@ html {
   line-height: 1.5em;
   background-color: #36393D;
 }
-/*todo:tabellen aufspüren*/
-/*todo: mainnav active links highlighten*/
-/*todo: verwendete forms in bootstrap umbauen*/
-/*todo:.fixed-header bei scroll 50px script add-replace class*/
 body,
 body.no-fixed-header {
-  max-width:940px;/*width: 940px;*//*ncm*/
-  margin: 0 auto;/* 1em auto;*//*ncm*/
-  padding: 0;/*padding: 20px;*//*ncm*/
+  max-width:940px;
+  margin: 0 auto;
+  padding: 0;
   background-color: #FFFFFF;
 }
 body.fixed-header {
@@ -39,7 +35,7 @@ body.fixed-header #header .headerContent {
   background-color: #333366;
 }
 #header.fixed,
-body.fixed-header #header { /*ncm*/
+body.fixed-header #header { 
     position: fixed;
     left: 0;
     right: 0;
@@ -58,12 +54,7 @@ body.fixed-header #header { /*ncm*/
 }
 #logo {
   float: left;
-  /*
-  width: 165px;
-  height: 72px;
-  */
   background: transparent url(../images/karawane-logo-transparent-weiss.png) left top no-repeat;
-  /*ncm*/
   background-size: contain;
   max-width: 165px;
   min-height: 42px; 
@@ -85,7 +76,6 @@ body.fixed-header #header { /*ncm*/
 #header h1 {
   margin: 0;
   padding: 1em;
-  /*ncm*/
   font-size: 1em;
   line-height: 1em;
   text-align: right;
@@ -102,31 +92,12 @@ body.fixed-header #header { /*ncm*/
     font-size:2.5em;
   }
 }
-/*
-#header h1 a {
-  text-decoration: none;
-}
-*/
 #header a:link,
 #header a:visited {
   color: #FFFFFF;
 }
-/* ncm removed
-header #otherworkshops {
-  margin: 0 0 1em;
-  padding: 0 0.5em 0 0;
-  text-align: right;
-}
-*/
-/* ncm removed
-#otherworkshops a {
-    border: 1px solid black;
-    padding: 0.3em;
-    text-decoration: none;
-}
-*/
 #menustorage .navbar {
-  margin-bottom:0;/*kann sein dass es für fixed shadow benötigt wird*/
+  margin-bottom:0;
 }
 #menustorage .navbar-brand {
   float: left;
@@ -137,36 +108,12 @@ header #otherworkshops {
       font-size: 12px;
   }
 }
-/*
-ul.topnav {
-  margin: 0;
-  padding: 0;
-  list-style: inside none;
-}
-ul.topnav li {
-  float: left;
-  border-top: 0.1em solid #FFFFFF;
-  border-right: 0.1em solid #FFFFFF;
-}
-ul.topnav li a,
-ul.topnav li span {
-  display: block;
-  padding: 0.8em 1em;
-  text-decoration: none;
-}
-*/
 #topnav_clearing {
   clear: left;
 }
 #content {
   padding: 2em 0;
 }
-/*
-#sidebar {
-  float: left;
-  width: 300px;
-}
-*/
 #sidebar nav,
 #sidebar section {
   margin: 0 0 1em;
@@ -205,14 +152,6 @@ ul.mainnav li.section {
   max-width: 85%;
 }
 #document {
-  /*
-  width: 590px;
-  margin: 0 0 0 320px;
-  padding: 15px;
-  */
-  /*background-color: #F9F7ED;*/
-  /*text-align: justify;*//*removed ncm*/
-  
 }
 @media(min-width:768px){
   #document {
@@ -233,7 +172,6 @@ body.ui_light #document {
   padding: 1px;
   text-align: center;
   color: #FFFFFF;
-  /*background-color: #36393D;*/
   background-color: #333366;/*gpwblue*/
 }
 #footer a:link,
@@ -256,23 +194,10 @@ body.ui_light #document {
 #footer p.links a.link.last:after {
     content: "";
 }
-/*
-#footer div#socialshareprivacy {
-  width: 540px;
-  margin: 0 auto;
-  text-align: left;
-  color: #000000;
-}
-*/
 /* Fixes for Wiki */
 textarea[name="content"] {
   width: 99%;
 }
-/*
-#stylechoose {
-  cursor: pointer;
-}
-*/
 #header .headerContent a.homelink {
   display:block;
 }
@@ -476,7 +401,7 @@ form.separated {
   }
 }
 /*
-ncm: menu - sm-devices 2 lines;
+menu - sm-devices 2 lines;
 */
 @media(max-width:767px){}
 @media(min-width:768px){}
@@ -499,7 +424,7 @@ ncm: menu - sm-devices 2 lines;
 @media(min-width: @screen-md-min){}  
 @media(min-width: @screen-lg-min){}
 
-/*ncm: menu - sm-devices 2 lines;*/
+/* menu - sm-devices 2 lines;*/
 @media (min-width: 768px) and (max-width: 991px) {
   #menustorage nav.navbar .navbar-header,
   #menustorage nav.navbar #gpwNavbar {
@@ -526,7 +451,7 @@ ncm: menu - sm-devices 2 lines;
 }
 #menustorage .navbar-nav>li>.dropdown-menu li ul {
   list-style: none;
-  padding:0;/*padding-left: 2.5em;*/
+  padding:0;
 }
 .xxx .caret {
     float: right;
@@ -541,12 +466,6 @@ ncm: menu - sm-devices 2 lines;
 #menustorage .navbar-nav > .dropdown > a .caret {
     z-index:3;
 }
-/*
-.navbar-nav .dropdown .dropdown-menu a:focus, 
-.navbar-nav .dropdown .dropdown-menu a:hover {
-    text-decoration: underline;
-}
-*/
 /*lv2 und lv3 links auf selbe höhe bringen*/
 #menustorage .navbar-nav .open .dropdown-menu .dropdown-header,
 #menustorage .navbar-nav .open .dropdown-menu>li>a, 
@@ -578,7 +497,7 @@ ncm: menu - sm-devices 2 lines;
   }
 }
 /*
-ncm: re-color inverse menu
+re-color inverse menu
 src:http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3;
 */
 /* navbar */
@@ -622,7 +541,7 @@ fast-weiss #ddd
 #menustorage .navbar-inverse.gpw .navbar-nav > li > a:focus {
     /*soll weiss bleiben*//*color: #ddd;*//*fast-weiss*/
 }
-/*ncm: menu - >= md hover effect bg color*/
+/* menu - >= md hover effect bg color*/
 @media (min-width: 768px) {
   #menustorage .navbar-inverse.gpw .navbar-nav>li:hover,
   #menustorage .navbar-inverse.gpw .navbar-nav>li:focus {
@@ -700,27 +619,7 @@ fast-weiss #ddd
 }
 
 /*fixierte navigation- ebenso body.fixed-header und somit #header .headerContent : display:none; transition; */
-#header {
-  /*
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    transition: 0.5s;
-  */  
-    /* For Safari 3.1 to 6.0 */
-    /*
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 1s;
-    -webkit-transition-timing-function: ease;
-    -webkit-transition-delay: 0.5s;
-    */
-    /* Standard syntax */
-    /*
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-    transition-delay: 0.5s;
-    */  
+#header { 
 }
 body.fixed-header #header {
     margin-top: 52px; 
@@ -781,19 +680,14 @@ Fragen / todos:;
 
 
 
-05.) Wo ist das Formular für die Teilnehmer-Suche? http://test.mongueurs.net/gpw2017/search
-06.) Wo ist die Tabelle Teilnehmerstatistik? http://test.mongueurs.net/gpw2017/stats
-07.) Wo wird die Vorträge-Tabelle generiert? http://test.mongueurs.net/gpw2017/talks
-08.) Wo wird die Favorite-Vorträge-Tabelle generiert? http://test.mongueurs.net/gpw2017/favtalks
-09.) Wo wird die User-Bio-Tabelle generiert? siehe http://act.yapc.eu/gpw2016/user/1275
-10.) OK? Wo wird die Programm-Tabelle generiert? siehe http://act.yapc.eu/gpw2016/schedule
-*) Todo Tabelle preise.html umbauen responsive
- --templates/talk/add
- --templates/talk/list
- --templates/talk/favorites
 
-*) OK? Todo/Frage: Kann ich nach Login beliebig Vorträge anlegen zum Testen?;
-*) todo: http://test.mongueurs.net/gpw2017/myschedule - responsive tabelle?;
+
+10.) OK so? Wo wird die Programm-Tabelle generiert? siehe http://act.yapc.eu/gpw2016/schedule -> schedule
+*) Todo Tabelle preise.html umbauen responsive
+ new--templates/talk/add
+ new--templates/talk/list
+ new--templates/talk/favorites
+
 
 *) Template zum Generieren des Usermenüs (PROCESS menus/user) vor und nach Einloggen benötigt - u.a. wegen Sprachwechsellink
     01.) Wie kann ich per Template-Script den Sprachwechsellink generieren (aktuelle URL & parameter: &language=de oder en)?
@@ -807,4 +701,12 @@ Fragen / todos:;
 *) Template für http://test.mongueurs.net/gpw2017/changepwd
     04.) Wo ist das Passwort-Vergessen-Formular? http://test.mongueurs.net/gpw2017/changepwd
 *) Wo ist [% showtags(tags, 'talks') %] definiert? Denn dort wird ein Formular gerneriert, welches ebenfalls nicht responsive ist
+*) Wo wird die Tabelle der Talks, welche hier angezeigt wird (http://test.mongueurs.net/gpw2017/talks), generiert?
+    07.) Wo wird die Vorträge-Tabelle generiert? http://test.mongueurs.net/gpw2017/talks
+    05.) Diese Tabelle ist noch nicht responsive und weiters ist die Checkbox (Talk zum personal schedule hinzufügen) da, aber kein Button zum Absenden des Formulars
+05.) Wo ist das Formular für die Teilnehmer-Suche? http://test.mongueurs.net/gpw2017/search
+06.) Wo ist die Tabelle Teilnehmerstatistik? http://test.mongueurs.net/gpw2017/stats
+09.) Wo wird die User-Bio-Tabelle generiert? siehe http://act.yapc.eu/gpw2016/user/1275
+*) Wo ist Template http://test.mongueurs.net/gpw2017/myschedule - responsive tabelle?;
+
 *****************/

@@ -49,7 +49,7 @@ $(document).ready(function(){
 $(document).ready(function(){
  
   /*
-  //stylechooser removed by ncm:
+  //stylechooser removed
   
   $('#header').append($('<div id="stylechoose">'+stylechoose+'</div>'));
   $('#stylechoose').css('position', 'absolute');
@@ -70,7 +70,7 @@ $(document).ready(function(){
   */
 
 
-  //ncmstart
+
   //$(function(){
     // bind change event to select archiv
     $('#archiv').on('change', function () {
@@ -140,7 +140,7 @@ $(document).ready(function(){
 
 
 
-  //ncmende
+
 
 });
 /*
