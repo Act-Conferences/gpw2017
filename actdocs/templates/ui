@@ -18,14 +18,11 @@
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   	<!-- Optional theme -->
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-  	<!--endncm-->	
     <script type="text/javascript" src="scripts/modernizr.js"></script>	
-    <!--startncm-->
   	<!--removed because included in bootstrap <link rel="stylesheet" type="text/css" href="styles/normalize.css">-->
-  	<!--endncm-->
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <!--<link rel="stylesheet" type="text/css" href="styles/oldcolors.css">-->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><!--ncm-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -48,73 +45,19 @@
       </div>
   
 	  
-      <!--ncmstart-->	  
-      <div id="menustorage" class="hiddenx ncm">
+
+      <div id="menustorage" class="hiddenx">
       	<div class="elemWrapper">
 
 
-          <nav id="navtop" class="navbar navbar-default navbar-inverse gpw navbar-fixed-topx navbar-static-top bootstrap hiddenx ncm" role="navigation">
+          <nav id="navtop" class="navbar navbar-default navbar-inverse gpw navbar-fixed-topx navbar-static-top bootstrap hiddenx" role="navigation">
             [% PROCESS menu_top %]
           </nav>
 
 
-
-
-          <!--
-          <div class="navbar-wrapper mod_backboneit_navigation_menu bootstrap visible-xsx visible-mdx visible-lgx visible-smx hidden ncm">
-              <div class="container">
-            
-                <div class="navbar yamm navbar-default navbar-static-top" role="navigation">
-                  <div class="container">
-                    <div class="navbar-collapse collapse">
-                      <ul class="nav navbar-nav level_1 sf-js-enabled sf-arrows">
-              					<li class="hideMenuOnDesktop startseite regular leaf first hovernav">
-              						<a href="index.html" title="<t><de>Startseite</de><en>Home</en></t>" class="hideMenuOnDesktop startseite regular leaf first"><t><de>Startseite</de><en>Home</en></t></a>
-                        </li>
-                        
-              					<li class="yamm-fw item first desktop regular hovernav">
-              						<a href="news" title="News" class="regular leaf">News</a>                  
-              					</li>
-                        
-              					<li class="yamm-fw item regular hovernav">
-              						<a href="venue.html" title="<t><de>Veranstaltungsort</de><en>Venue</en></t>" class="regular leaf"><t><de>Veranstaltungsort</de><en>Venue</en></t></a>
-              					</li>
-                        
-              					<li class="regular leaf hovernav">
-              						<a href="stats" title="<t><de>Teilnehmer</de><en>Attendees</en></t>" class="regular leaf"><t><de>Teilnehmer</de><en>Attendees</en></t></a>
-                                  </li>
-                        
-              					<li class="regular leaf hovernav">
-              						<a href="schedule" title="<t><de>Programm</de><en>Schedule</en></t>" class="regular leaf"><t><de>Programm</de><en>Schedule</en></t></a>
-                                  </li>
-              					
-              					<li class="regular leaf hovernav">
-              						<a href="sponsoring.html" title="<t><de>Unterstützen</de><en>Sponsoring</en></t>" class="regular leaf"><t><de>Unterstützen</de><en>Sponsoring</en></t></a>
-                                  </li>
-
-              					<li class="regular leaf hovernav">
-              						<a href="sponsors.html" title="<t><de>Sponsoren</de><en>Sponsors</en></t>" class="regular leaf"><t><de>Sponsoren</de><en>Sponsors</en></t></a>
-                                  </li>
-
-              					<li class="regular leaf hovernav">
-              						<a href="status.html" title="Status" class="regular leaf">Status</a>
-                                  </li>					
-                        
-              					<li class="desktop regular leaf last hovernav">
-              						<a href="press.html" title="t><de>Presse</de><en>Press</en></t>" class="last regular leaf">t><de>Presse</de><en>Press</en></t></a>
-                        </li>
-                    
-              				</ul>
-      			         </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-           -->
-
       	</div>
       </div>	  
-      <!--ncmende-->	 	 
+ 	 
        
     </header>
 
@@ -131,8 +74,8 @@
 
       <aside id="sidebar" class="col-sm-3 col-md-4">
 
-        <!--ncmstart--><!--id:otherworkshops-->
-        <section id="archivnav" class="elemWrapper archivWrapper ncm">
+        <!--id:otherworkshops-->
+        <section id="archivnav" class="elemWrapper archivWrapper">
           <h2><t><de>gpw-Archiv</de><en>Archive of gpw</en></t></h2>  
           <form id="archiv_form" action="#">  
             <fieldset class="form-group"><!--style="display: inline-block;float: right;"-->
@@ -160,10 +103,9 @@
               </select>
             </fieldset>
           </form>
-        </section>
-        <!--ncmende-->  
+        </section> 
 
-        <nav id="mainnav"><!--ncmstart navbar navbar-fixed-bottom navbar-dark ncmend-->
+        <nav id="mainnav">
           <h2><t><de>Dieser Workshop</de><en>This conference</en></t></h2>
           <ul class="mainnav">
             [% PROCESS menu %]
@@ -222,10 +164,8 @@
     <script type="text/javascript" src="scripts/jquery.js" defer></script>
     <script type="text/javascript" src="scripts/jquery-migrate.js" defer></script>
 
-  	<!--startncm-->
   	<!-- Latest compiled and minified JavaScript -->
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous" defer></script>
-  	<!--endncm-->	
 
     <script type="text/javascript" src="scripts/jquery.socialshareprivacy.js" defer></script>
     <script type="text/javascript" src="scripts/jquery.cookie.js" defer></script>

@@ -1,6 +1,7 @@
 [% WRAPPER ui title = loc("Favorite Talks") %]
 <h2> Test Reneeb</h2>
-<table border="1" cellspacing="0" cellpadding="4">
+<div class="table-responsive">
+<table border="1" cellspacing="0" cellpadding="4" class="table table-striped">
 <tr>
  <th>{{Stars}}</th>
  <th>{{Speaker}}</th>
@@ -35,5 +36,6 @@
   </tr>
 [% END %]
 </table>
+</div>
 [% END %]
 
