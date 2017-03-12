@@ -36,12 +36,15 @@
         map = new OpenLayers.Map("basicMap");
         var mapnik = new OpenLayers.Layer.OSM();
         map.addLayer(mapnik);
-        map.setCenter(new OpenLayers.LonLat(9.995782, 53.500269) // Center of the map
-          .transform(
-            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
-            new OpenLayers.Projection("EPSG:900913") // to Spherical Mercator Projection
-          ), 16 // Zoom level
-        );
+		var marker = new OpenLayers.Layer.Markers("Marker");
+		map.addLayer(marker);
+		var lonLat = new OpenLayers.LonLat(9.995782, 53.500269)
+			.transform(
+				new OpenLayers.Projection("EPSG:4326"),
+				map.getProjectionObject()
+		);
+		marker.addMarker(new OpenLayers.Marker(lonLat, icon));
+        map.setCenter(lonLat, 16); // Zoom level
       }
       init();
     </script>
