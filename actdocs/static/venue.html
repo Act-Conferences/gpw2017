@@ -9,18 +9,16 @@
     <div id="basicMap"></div>
     <p><t>
       <de>
-        Der Deutsche Perl-Workshop 2016 findet im <strong>DATEV IT-Campus</strong>,
-        Fürther Str. 111, 90429 Nürnberg nahe dem Zentrum von Nürnberg statt.<br />
+        Der Deutsche Perl-Workshop 2017 findet im <strong>Bürgerhaus Wilhelmsburg</strong>,
+        Mengestraße 20, 21107 Hamburg nahe dem Zentrum von Hamburg statt.<br />
         Die Anreise kann sehr gut mit öffentlichen Verkehrsmitteln erfolgen.
-        Die U-Bahn-Haltestelle (U 1) <strong>Maximilianstraße</strong> ist nur 300 Meter entfernt.
-        Gehe stadteinwärts.
+        Die S-Bahn-Haltestelle (S3 S31) <strong>Hamburg-Wilhelmsburg</strong> ist nur 800 Meter entfernt.
       </de>
       <en>
-        The German Perl Workshop 2016 will take place in <strong>DATEV IT-Campus</strong>,
-        Fürther Str. 111, 90429 Nürnberg, near the centre of Nuremberg.<br />
-        We have an excellent public transport system in Nuremberg and the next
-        underground station (U 1) <strong>Maximilianstraße</strong> is only 300 meters away.
-        Work into direction town centre.
+        The German Perl Workshop 2017 will take place in <strong>Bürgerhaus Wilhelmsburg</strong>,
+        Mengestraße 20, 21107 Hamburg, near the centre of Hamburg.<br />
+        We have an excellent public transport system in Hamburg and the next
+        local train station (S3 S31) <strong>Hamburg-Wilhelmsburg</strong> is only 800 meters away.
       </en>
     </t></p>
     <p>
@@ -38,7 +36,7 @@
         map = new OpenLayers.Map("basicMap");
         var mapnik = new OpenLayers.Layer.OSM();
         map.addLayer(mapnik);
-        map.setCenter(new OpenLayers.LonLat(11.046511,49.453176) // Center of the map
+        map.setCenter(new OpenLayers.LonLat(9.995782, 53.500269) // Center of the map
           .transform(
             new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
             new OpenLayers.Projection("EPSG:900913") // to Spherical Mercator Projection
