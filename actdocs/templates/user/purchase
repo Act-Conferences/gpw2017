@@ -119,6 +119,22 @@ Bitte &uuml;berweisen Sie den Rechnungsbetrag auf das genannte Konto. </de>
 <en>We will email you a invoice payable by bank transfer after completing your order.
 International visitors please contact us for cash payment on the conference day.</en></t>
 </p>
-
+<table>
+<tr>
+	  <td colspan="2"> <br/><br/><de>Bitte &uuml;berweisen Sie den Betrag auf das folgende Konto</de>
+                                  <en>Please pay the fee to the following account via SEPA payment</en></td>
+        </tr>
+            <tr> <td> Empf&auml;nger</td><td > Frankfurt Perlmongers e.V.</td></tr>
+            <tr> <td> Kontonummner/Account</td><td > 4950960</td></tr>
+            <tr> <td> Bankleitzahl/Bank identification number</td><td > 50090500</td></tr>
+            <tr> <td> IBAN</td><td > DE83500905000004950960</td></tr>
+            <tr> <td> BIC</td><td > GENODEF1S12</td></tr>
+            <tr> <td> Bank</td><td > Sparda Hessen eG</td></tr>
+            <tr valign="top"> <td> Verwendungszweck</td><td>DPW 2017 Hamburg<br/>BestellNr.: <em>Bestellnummer</em><br/><em>Nachname, Vorname</em></td></tr>
+            <tr>
+	      <td colspan="2">
+	      <p>Der Frankfurt Perlmongers e.V. ist ein gemeinn&uuml;tziger Verein weisst keine USt. aus.</p>
+</tr>
+</table>
 [% file = "core/bank/${global.config.payment_type}" ; PROCESS $file %]
 [%END%]
