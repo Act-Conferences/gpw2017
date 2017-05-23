@@ -2,7 +2,6 @@
    ELSE;   title = loc("List of talks");
    END;
    WRAPPER ui title = title %]
-<h2>Test ReneeB</h2>
 <div align="center">
   <p>
    [% IF talks_total == 0 %]

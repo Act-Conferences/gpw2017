@@ -1,8 +1,5 @@
 [% WRAPPER ui title = loc("Submit/Edit a talk") %]
 
-<h2>Test ReneeB</h2>
-
-
 
 [% PROCESS error
    msgs = {
